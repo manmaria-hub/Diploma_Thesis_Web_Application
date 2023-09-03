@@ -1,0 +1,2809 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ 
+:root {
+    --Marine-blue: hsl(197, 96%, 18%);
+    --Purplish-blue: hsl(243,100%, 62%);
+    --Pastel-blue: hsl(228,100%, 84%);
+    --Light-blue: hsl(206,94%, 87%);
+    --Strawberry-red: hsl(354,84%, 57%);
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(193, 47%, 96%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);    
+    --Light-blue: hsl(205, 67%, 93%);
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';   
+    padding: 0;
+    margin: 0;  
+}
+
+.add_courses_submit_main{
+    width: 94.7%;
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    font-size: 14px;
+    direction: ltr;
+    margin-top: 3rem;
+    position: relative;
+    .add_courses_scroll {
+       display: contents;  
+       overflow: hidden;
+       img {
+        width: 100%;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        justify-content: center;
+        background-clip: border-box;
+        background-size: cover;
+    }
+        .title {
+            display: flex;
+            text-align: center;
+            margin-top: 2rem;
+            align-self: center;
+            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 22px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: #6a6a6a;
+            display: block;
+            padding: 13px 0 13px;
+            background-color: #17a3b814;
+            p {
+                color: #17a2b8;
+                text-shadow: 0.5px 0.4px 0.7px white;
+                margin-top: 0.5rem;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";                     
+            }
+        
+    }
+    .header_area {
+        display: flex;
+        flex-direction: row;
+        width: 102.5%;
+        margin-top: 1.5rem;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        border-bottom: 1px solid #d6d5d5;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        justify-content: right;
+
+        .logo {
+            display: inline-flex;
+            margin-bottom: -1.3rem;
+
+            img {
+                flex: 1; 
+                display: flex;
+                margin-right: 0;
+                margin-left: auto;
+                width: 310px;
+                height: 115px;
+            }
+        }
+    }
+
+    .forms_container {
+        display: block;
+        margin-top: 2rem;
+
+        .text {
+            color: #606060;
+            letter-spacing: 0.5px;
+            line-height: 1.5em;
+            text-align: justify;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        } 
+    } 
+        .root {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding: 20px 20px; 
+            .main_title{  
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";              
+                font-size: 35px; 
+                color: #f09f09;
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-align: center;
+                padding-bottom: 0.8rem;
+                border-bottom: 1px solid #17a2b8;
+                margin-bottom: 2rem;
+                margin: 0 50px;
+                margin-bottom: 3rem;
+            }  
+            .addCourse_container {
+                width: 95%;   
+                display: block; 
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                font-size: 14px;
+                direction: ltr;
+                margin-top: 3rem;
+                position: relative; 
+                .learn_more{
+                    align-self: end;
+                    justify-content: end;
+                    margin: 0px 50px 50px 0;
+                    position: relative;
+                    display: inline-block;
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+                    vertical-align: middle;
+                    text-decoration: none;
+                    background-color: transparent;
+                    padding: 0;
+                    font-family: sans-serif;
+                    font-size: inherit;
+                    width: 12rem;
+                    height: auto;   
+                    .circle{
+                        transition: all 0.45s cubic-bezier(0.65, 0, 0.76, 1);
+                        position: relative;
+                        display: flex;
+                        margin: 0;
+                        width: 3.2rem;
+                        height: 3.2rem;           
+                        background-color: rgb(37, 109, 127);
+                        border-radius: 1.625rem;            
+                        z-index: 2;            
+                        .check{
+                            transition: all 0.45s cubic-bezier(0.65, 0, 0, 0.76, 1);
+                            position: relative;  
+                            vertical-align: middle;  
+                            top: 1.7px; 
+                            left: 0.1rem;
+                        
+                            font-size: 3rem;             
+                            color: #fff;
+                            z-index: 2;
+                        }                  
+                    }      
+                    .button_text{
+                        z-index: 1;
+                        transition: all 0.45s cubic-bezier(0.65, 0, 0.76, 1);
+                        position: relative;
+                        top: 0;
+                        left:-2.65rem;
+                        right: 0;
+                        bottom: 0;  
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                        padding: 0.75rem;
+                        padding-left: 2rem;
+                        margin: 0 0 0 1.85rem; 
+                        color: rgb(37, 109, 127);
+                        letter-spacing: 2px;
+                        text-shadow: .5px 0.5px 0.5px whitesmoke;
+                        font-weight: 700;
+                        font-size: 1.1rem;
+                        line-height: 1.6;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }      
+                }
+                .learn_more:hover {         
+                    .circle {             
+                        width: 100%;  
+                        box-shadow: 0px 2px 15px 0px rgb(76, 150, 174);   
+                    } 
+                    .button_text {
+                        color:  white; 
+                        text-shadow: none;
+                    }
+                }
+                .addCourse_main {
+                    margin: 35px 35px;            
+                    z-index: 8;           
+                    
+                    .menu_fields{ 
+                        width: 90%;
+                        margin-left: 5%;
+                        transform: translateY(-70%); 
+                        opacity: 0;
+                        height: fit-content; 
+                        padding: 20px 7px;   
+                        margin-top: 1.5rem;
+                        font-size: 0.7rem;
+                        background-color: #eae9e9;
+                        color: rgb(7, 92, 113);
+                        font-weight: 600;
+                        border-bottom-left-radius: 25px;
+                        border-bottom-right-radius: 25px;
+                        transition: 0.7s ease-out; 
+                        position: relative;
+                        z-index: 2;
+                        cursor: default;
+                        pointer-events: none;
+
+                        ul{
+                            display: flex;
+                            list-style: none;
+                            flex-direction: row;
+                            list-style: none;
+                            text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 1.2vw;   
+                            li {
+                                display: flex;
+                                flex-direction: column; 
+                                gap: 2px; 
+                                align-items: center;
+                                justify-content: space-between;                     
+                                h2{ 
+                                    align-items: center;                    
+                                    width: 35px;
+                                    height: 35px;     
+                                    text-align: center;
+                                    padding: 9px 5.5px;                    
+                                    border-radius: 50%;
+                                    font-size: 15px;
+                                    vertical-align: middle;
+                                    font-weight: 700;
+                                    color: whitesmoke; 
+                                    background-color: #17a2b8;
+                                }
+                            }
+                        }           
+                    }        
+                    .menu_fields.active{ 
+                        transform: translateY(0%);
+                        transition: 0.7s ease-in;
+                        opacity: 1; 
+                        cursor: pointer;
+                        pointer-events: all;
+                    }
+                    .tab {
+                        transition: 1s ease-in-out;
+                        margin-top: 4rem;
+                        position: relative;
+                        width: 94%; 
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 50px;
+                        z-index: 1;
+                        user-select: none;  
+                        .menuToggle{
+                            position: absolute;
+                            top: -50%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width:fit-content;
+                            height: 130%;
+                            padding: 0rem 1.5rem;                
+                            background: rgb(7, 92, 113);
+                            z-index: 1;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            display: flex;
+                            flex-direction: column;                
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff; 
+                            transition: 1s ease-in-out;
+                            text-align: center;
+                            font-size: 1vw;
+                            font-weight: 600;               
+                            line-height: 1.4vw; 
+                            span{
+                                position: relative; 
+                            }
+                            p{ 
+                                display: none;
+                                margin-top: -0.05vw;
+                                color: #fff;
+                                background-color: #17a2b8;
+                                padding: 0.2vw 0.35vw;                    
+                                border-radius: 50%;
+                                font-size: 0.8vw;
+                            }
+                            
+                        }
+                        ul.menu{
+                            .specializationCode{
+                                position: fixed;
+                                margin-left: -60%;
+
+                            }
+                            position: absolute;
+                            inset: 0; 
+                            background: #def7f8cc;
+                            border-radius: 10px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 5vw; 
+                            height: 75px;
+                            box-shadow: 0 -5px 25px rgba(0,0,0,0.1);
+                            li{
+                                list-style: none;
+                                .mui_icon1,.mui_icon2, .mui_icon3, .mui_icon4{
+                                    font-size: 1.85em;
+                                    color: #aeaeae;
+                                    pointer-events: none;
+                                    .active{
+                                        color: #17a2b8;
+                                    }                        
+                                }
+                                .mui_icon1.active, .mui_icon2.active, .mui_icon3.active, .mui_icon4.active {
+                                    color: #17a2b8;
+                                }
+                            }
+                        }
+                        .menu_studies {                
+                            opacity : 0;
+                            position: absolute;
+                            background-color:rgb(13, 94, 114); 
+                            color: white;  
+                            width: 95%;
+                            margin-left: 2.5%;
+                            height: fit-content;
+                            transform-origin: top center;  
+                            z-index: -1;
+                            transform: translateY();
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            flex-direction: row;
+                            transition: 0.5s ease-in-out;  
+                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
+                            ul{   
+                                list-style: none;
+                                flex-direction: row;
+                                display: inline-flex; 
+                                align-items: center;
+                                gap: 4vw; 
+                                justify-content: center; 
+                                letter-spacing: 0.4px;
+                                padding: 20px 0px;
+                                margin-bottom: -0.8rem;
+                                li{
+                                    width: 15%;
+                                    text-align: center;
+                                    font-size: 10px;
+                                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                                }
+                                li:hover{
+                                    font-size: 12px;
+                                    font-weight: 700; 
+                                    color: #dddede;
+                                }
+                                p{
+                                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                                    color: #abebf2;
+                                }                     
+                            }
+                        }            
+                    } 
+                    .tab.active { 
+                        transition: 1s ease-in;
+                        margin-top: 10rem;            
+                        .menuToggle {                
+                            transform: translateX(-50%) translateY(45%) rotate(360deg);
+                        }
+                        .menu_studies {
+                            display: flex;
+                            transform: translateY(-100%); 
+                            transition: 0.5s ease-out;   
+                            opacity: 1;            
+                        }
+                    }    
+                    .beforeMessage {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        vertical-align: middle;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 2rem 3%;
+                        padding-bottom: 3rem;
+                        .messageIcon {
+                            align-self: center;
+                            justify-self: center;
+                            vertical-align: middle;
+                            font-size: 50px; 
+                            color: rgb(250, 172, 15);
+                        }
+                        p{            
+                        position: relative; 
+                        text-align: justify;
+                        font-size: 18px;
+                        color: gray;
+                        font-weight: 500; 
+                        }
+                    }  
+                }
+
+                .section_body{   
+                    background: #fff; 
+                    transition: margin 1s ease-in-out; 
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin-top: -1.5rem !important;        
+                    .container_fluid{
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        margin-right: auto;
+                        margin-left: auto;   
+                        position: relative; 
+                        background-color: transparent;
+                        .tab_pane {                  
+                            //display: block;                
+                            .card_basicInfo, .card_studyProgramInfo, .card_courseManagementInfo, .card_moreInfo{ 
+                                transition: all 0.5s ease-in-out;
+                                border-radius: 0.55rem;
+                                border-color: #E6E9ED;
+                                position: relative;
+                                width: 100%;
+                                //margin-bottom: 15px;
+                                display: block;
+                                //flex-direction: column;
+                                min-width: 0;
+                                word-wrap: break-word;
+                                background-color: #fff;
+                                background-clip: border-box;
+                                border: 1px solid rgba(0,0,0,.125);  
+                                box-shadow: 0 1px 12px 1px rgb(216, 216, 216);
+                                //padding-bottom: 5%;
+                                margin-bottom: 3.5rem;     
+                                .button_container{   
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    margin-top: -0.5rem; 
+                                    margin-bottom: 3.5rem;
+                                }
+                                .submit_button {  
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                    border: 0px solid var(--Marine-blue);
+                                    border-radius: 30px;
+                                    font-size: 1rem;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    display: flex;
+                                    cursor: pointer;
+                                    outline: none;    
+                                    transition: all 0.25s ease;
+                                    width: 270px;
+                                    position: relative;   
+                                    height: 60px; 
+                                    overflow: hidden;
+                                    text-align: center; 
+                                    gap: 9px;    
+                                    &:not(.loading):hover{
+                                        box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                        }         
+                                    } 
+                                    .buttonIcon{ 
+                                        padding: 10px 5px;
+                                        position: absolute;
+                                        left: 0px;
+                                        pointer-events: none;
+                                        z-index: 10;
+                                        background: inherit;
+                                        width: 60px;
+                                        height: 60px;
+                                        display: flex;
+                                        align-items: center; 
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        transition: all 0.25s ease; 
+                                    }  
+                                    .text {
+                                        width: 200px;
+                                        display: block;
+                                        padding: 12px 12px;
+                                        line-height: 1rem;
+                                        position: absolute;
+                                        margin-left: 2.2rem;
+                                        pointer-events: none;
+                                        transition: all 0.25s ease;
+                                    }   
+                                    .loading-animate{
+                                        position: absolute;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        top: 0;
+                                        left: 0px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        pointer-events: none;
+                                        opacity: 1;
+                                        transition: all 0.25s ease;
+                                        z-index: 100;
+                                        &::after{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s ease 0.05s;
+                                            position: absolute; 
+                                            opacity: 0.6;
+                                        }
+                                        &::before{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s linear;
+                                            position: absolute;
+                                            opacity: 0.6;
+                                        }
+                                    } 
+                                }    
+                                .submit_button.loading{
+                                    width: 60px; 
+                                    .buttonIcon{
+                                        transform: rotate(-90deg);
+                                        //padding-bottom: 4px;
+                                        //padding-left: 3px;
+                                    }
+                                    .text{
+                                        transform: translate(-140px);
+                                    }
+                                    .loading-animate{
+                                        opacity: 1;
+                                    }
+                                }           
+                                .card_header{                        
+                                    padding: 20px 20px;
+                                    border: 0;
+                                // padding-bottom: 2rem;
+                                    background: none;
+                                    display: flex;
+                                    flex-direction: row; 
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-bottom: 0;  
+                                    .mui_icon1Form, .mui_icon2Form , .mui_icon3Form , .mui_icon4Form  {
+                                        color: #b0b4b8;
+                                        margin-top: -0.17rem;
+                                        position: relative;
+                                        display: inline-flex;
+                                    }
+                                    .mui_icon1Form.active, .mui_icon2Form.active, .mui_icon3Form.active, .mui_icon4Form.active {
+                                        color: #17a2b8
+                                    }
+                                    .card_title{                            
+                                        margin-left: 1.5%;
+                                        font-size: 1.1rem;
+                                        font-weight: 600;
+                                        letter-spacing: 1.2px;
+                                        line-height: 1.2;
+                                        text-transform: uppercase;
+                                        //margin-bottom: 5px;
+                                        color: #17a2b8; 
+                                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                                        //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                    }
+                                    .card_options{
+                                        color: #9aa0ac;
+                                        margin-left: auto;
+                                        display: flex;
+                                        order: 100;
+                                        align-self: center;
+                                        .card_options_collapse, .card_options_remove{
+                                            font-size: 21px;
+                                            margin-top: -0.2rem;
+                                            margin-left: 15px;
+                                            color: #007bff;
+                                            text-decoration: none;
+                                            background-color: transparent;
+                                            cursor: pointer;
+                                            display: flex;
+                                        }
+                                        .lock {
+                                            display: flex;
+                                            cursor: pointer;   
+                                            font-size: 21px;    
+                                            color: #df990f;                         
+                                        }
+                                        .lockOpen {
+                                            display: none;
+                                            cursor: pointer;   
+                                            font-size: 21px;    
+                                        }
+                                        .card_options_collapse_more {
+                                            display: none;
+                                            font-size: 21px;
+                                            margin-top: -0.2rem;
+                                            margin-left: 15px;
+                                            color: #007bff;
+                                            text-decoration: none;
+                                            background-color: transparent;
+                                            cursor: pointer; 
+                                        }
+                                        .card_options_collapse::before {
+                                            content: '\e930';
+                                        }
+                                        .card_options_remove::before{
+                                            content: "\ea00";
+                                        }
+                                    }                        
+                                }
+                                .card_header:first-child{
+                                    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+                                }
+                                .card_body{   
+                                    padding-top: 0.5rem;
+                                    width: 96%;                       
+                                    margin: 1rem 2% 2rem 2%;
+                                    //position: relative; 
+                                    transition: 1s ease-in-out;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 4rem;  height: auto; 
+                                    .row_courses{         
+                                        flex-direction: row; 
+                                        display: flex;
+                                        gap: 15px;  
+                                        //margin-left: 0rem;
+                                        //margin-right: auto;
+                                        //width: 94%;       
+                                        justify-content: center;                                                        
+                                        .column{  
+                                            margin-top: 0.5rem;
+                                            position: relative;
+                                            width: 48%;   
+                                            justify-content: justify; 
+                                            .error, .errorValid, .errorThree, .errorSemStudy, .errorSemPer, .errorCatLab, .errorTypCat, .errorDuplicate { 
+                                                display: none;
+                                                position: absolute;
+                                                color: var(--Strawberry-red);
+                                                padding-top: 2.5rem;
+                                                padding-left: 0.5rem;
+                                                font-size: 11px;
+                                                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                                                font-weight: 600;
+                                            }               
+                                            .form_group{   
+                                                width: 96%;                                     
+                                                margin-left: 2%;
+                                                align-items: center;
+                                                justify-content: center;                                    
+                                                .form_control{       
+                                                    color: rgb(72, 72, 72);
+                                                    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";                            
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    outline: none;
+                                                    font-size: 16px; 
+                                                    font-weight: 400;
+                                                    height: 2.4rem;
+                                                    padding: .175rem .45rem;
+                                                    line-height: 1.2;
+                                                    border-radius: 0.15rem;
+                                                    border: 1px solid #ced4da;
+                                                    display: block;
+                                                    background-clip: border-box;  
+                                                    background: transparent;      
+                                                    transition: 0.1s ease-in-out; 
+                                                    z-index: 1111;                
+                                                }
+                                                .form_control:focus{
+                                                    color: #5ac0d9;   
+                                                    border: 0.1px solid #5ac0d9;
+                                                    outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;                                              
+                                                }
+                                                select{
+                                                    height: 33px;
+                                                    width: 100%;
+                                                    line-height: 1.2;
+                                                    &:focus{ 
+                                                        color: #5ac0d9;                                           
+                                                        border: 0.1px solid #5ac0d9;
+                                                        outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;  
+                                                    }  
+                                                } 
+                                                input:not([value='']) {
+                                                    color: #6b6b6b;                                           
+                                                    border: 0.1px solid #5ac0d9;
+                                                    outline: 2px solid hsla(184, 56%, 68%, 0.369) ;                                           
+                                                }                                                                                                                                                    
+                                                .labeline {
+                                                    position: absolute;
+                                                    font-size: 16.5px;
+                                                    color: #b7b5b5;
+                                                    padding: 6.5px 12px; 
+                                                    background-color: #fff;
+                                                    transition: 0.2s ease;   
+                                                }                                     
+                                                .form_control:focus + .labeline,
+                                                input:not([value='']) + .labeline
+                                                {
+                                                    color: #56b3ca;
+                                                    font-weight: 550;
+                                                    height: 27px;
+                                                    line-height: 27px; 
+                                                    transform: translate(4px , -14px) scale(0.88);
+                                                    //transform: translate(-4px , -14px) scale(0.88);
+                                                    z-index: 2222;
+                                                    padding: 0 5px;
+                                                } 
+                                                .checkboxes { 
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    flex-wrap: wrap;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    gap: 10px;
+                                                    label{
+                                                        input[type="checkbox"] {
+                                                            display: none;                                            
+                                                        }                 
+                                                        input[type="checkbox"]:checked ~ span {
+                                                            background: #17a2b8; 
+                                                            color: #eaecee;
+                                                            box-shadow: 0 2px 10px #17a2b8; 
+                                                        }                             
+                                                        span{
+                                                            background: #ddd;
+                                                            color: #2e9eb0;
+                                                            box-shadow: 0 2px 10px #656464;
+                                                            text-shadow: 0 0.2px 0.1px rgba(0,0,0,.5);
+                                                            letter-spacing: 1px; 
+                                                            position: relative;
+                                                            display: inline-block;
+                                                            font-size: 16px;
+                                                            font-weight: 600;
+                                                            padding: .375rem .75rem;
+                                                            line-height: 1.2;
+                                                            border-radius: 30px;
+                                                            transition: 0.5s;
+                                                            user-select: none;
+                                                            overflow: hidden;
+                                                            &::before {
+                                                                content: '';
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                width: 100%;
+                                                                height: 50%;
+                                                                background: rgba(255,255,255,0.1);
+                                                            }                                            
+                                                        }          
+                                                    }                
+                                                }                         
+                                            }
+                                        }                            
+                                    }
+                                }
+                            }
+                            .card_studyProgramInfo{
+                                height: fit-content;  
+                                .button_container{   
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    margin-top: -0.5rem; 
+                                    margin-bottom: 3.5rem;
+                                }
+                                .submit_button {  
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                    border: 0px solid var(--Marine-blue);
+                                    border-radius: 30px;
+                                    font-size: 1rem;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    display: flex;
+                                    cursor: pointer;
+                                    outline: none;    
+                                    transition: all 0.25s ease;
+                                    width: 270px;
+                                    position: relative;   
+                                    height: 60px; 
+                                    overflow: hidden;
+                                    text-align: center; 
+                                    gap: 9px;    
+                                    &:not(.loading):hover{
+                                        box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                        }         
+                                    } 
+                                    .buttonIcon{ 
+                                        padding: 10px 5px;
+                                        position: absolute;
+                                        left: 0px;
+                                        pointer-events: none;
+                                        z-index: 10;
+                                        background: inherit;
+                                        width: 60px;
+                                        height: 60px;
+                                        display: flex;
+                                        align-items: center; 
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        transition: all 0.25s ease; 
+                                    }  
+                                    .text {
+                                        width: 200px;
+                                        display: block;
+                                        padding: 12px 12px;
+                                        line-height: 1rem;
+                                        position: absolute;
+                                        margin-left: 2.2rem;
+                                        pointer-events: none;
+                                        transition: all 0.25s ease;
+                                    }   
+                                    .loading-animate{
+                                        position: absolute;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        top: 0;
+                                        left: 0px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        pointer-events: none;
+                                        opacity: 1;
+                                        transition: all 0.25s ease;
+                                        z-index: 100;
+                                        &::after{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s ease 0.05s;
+                                            position: absolute; 
+                                            opacity: 0.6;
+                                        }
+                                        &::before{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s linear;
+                                            position: absolute;
+                                            opacity: 0.6;
+                                        }
+                                    } 
+                                }    
+                                .submit_button.loading{
+                                    width: 60px; 
+                                    .buttonIcon{
+                                        transform: rotate(-90deg);
+                                        //padding-bottom: 4px;
+                                        //padding-left: 3px;
+                                    }
+                                    .text{
+                                        transform: translate(-140px);
+                                    }
+                                    .loading-animate{
+                                        opacity: 1;
+                                    }
+                                }
+                                .more {
+                                    width: 95%;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-left: 2.5%;
+                                    .more_message {
+                                        padding-bottom: 10px;
+                                        color: #7b7a7a;
+                                        letter-spacing: 0.5px;
+                                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";   
+                                        span{ 
+                                            font-weight: 600;
+                                            font-size: 18px;
+                                            color: #5ac0d9
+                                        }                         
+                                    }
+                                    .form_control2 {
+                                        color:  #7b7a7a;;
+                                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";                            
+                                        position: relative;
+                                        width: 99.5%; 
+                                        margin-bottom: -2.5rem;
+                                        font-size: 16px; 
+                                        font-weight: 400;  
+                                        border-radius: 0.3rem;
+                                        border: 1px solid #ced4da;
+                                        display: block;
+                                        background-clip: border-box;  
+                                        background: transparent;      
+                                        transition: 0.1s ease-in-out; 
+                                        z-index: 1111;                                         
+                                        border: 0.1px solid #5ac0d9;
+                                        outline: 2px solid hsla(184, 56%, 68%, 0.369) ;                                           
+                                        &:hover{
+                                            color: #5ac0d9;   
+                                            border: 0.1px solid #5ac0d9;
+                                            outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;  
+                                        }  
+                                        &::placeholder{
+                                            color: #b7b5b5;
+                                        }
+                                    }              
+                                }
+                            }
+                            .card_courseManagementInfo{
+                                .button_container{   
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    margin-top: -0.5rem; 
+                                    margin-bottom: 3.5rem;
+                                }
+                                .submit_button {  
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                    border: 0px solid var(--Marine-blue);
+                                    border-radius: 30px;
+                                    font-size: 1rem;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    display: flex;
+                                    cursor: pointer;
+                                    outline: none;    
+                                    transition: all 0.25s ease;
+                                    width: 270px;
+                                    position: relative;   
+                                    height: 60px; 
+                                    overflow: hidden;
+                                    text-align: center; 
+                                    gap: 9px;    
+                                    &:not(.loading):hover{
+                                        box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                        }         
+                                    } 
+                                    .buttonIcon{ 
+                                        padding: 10px 5px;
+                                        position: absolute;
+                                        left: 0px;
+                                        pointer-events: none;
+                                        z-index: 10;
+                                        background: inherit;
+                                        width: 60px;
+                                        height: 60px;
+                                        display: flex;
+                                        align-items: center; 
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        transition: all 0.25s ease; 
+                                    }  
+                                    .text {
+                                        width: 200px;
+                                        display: block;
+                                        padding: 12px 12px;
+                                        line-height: 1rem;
+                                        position: absolute;
+                                        margin-left: 2.2rem;
+                                        pointer-events: none;
+                                        transition: all 0.25s ease;
+                                    }   
+                                    .loading-animate{
+                                        position: absolute;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        top: 0;
+                                        left: 0px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        pointer-events: none;
+                                        opacity: 1;
+                                        transition: all 0.25s ease;
+                                        z-index: 100;
+                                        &::after{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s ease 0.05s;
+                                            position: absolute; 
+                                            opacity: 0.6;
+                                        }
+                                        &::before{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s linear;
+                                            position: absolute;
+                                            opacity: 0.6;
+                                        }
+                                    } 
+                                }    
+                                .submit_button.loading{
+                                    width: 60px; 
+                                    .buttonIcon{
+                                        transform: rotate(-90deg);
+                                        //padding-bottom: 4px;
+                                        //padding-left: 3px;
+                                    }
+                                    .text{
+                                        transform: translate(-140px);
+                                    }
+                                    .loading-animate{
+                                        opacity: 1;
+                                    }
+                                }
+                                .course_manager_form{
+                                    z-index: 10;
+                                    border-radius: 6px; 
+                                    box-shadow: 0px 1px 15px 1px #2e9fb02d ;
+                                    background-color: #dddddd2f;
+                                    height: fit-content;
+                                    align-items: center;
+                                    align-self: center;
+                                    width: 94%;
+                                    padding: 25px 25px;
+                                    li{
+                                        list-style: none;
+                                        display: flex;
+                                        flex-direction: row;
+                                        .title{ 
+                                            text-align: start; 
+                                            writing-mode: vertical-rl;
+                                            text-orientation: upright; 
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            letter-spacing: 1px;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            text-align: center;
+                                            list-style: none;   
+                                            padding-right: 15px; 
+                                            color: #656464;                                                    
+                                            border-right: 2px solid #5ac0d974;
+                                        }
+                                        .title_instructor{                                                                 
+                                            text-align: center;
+                                            justify-self: center; 
+                                            vertical-align: middle; 
+                                            padding-top: 1.5rem;
+                                            margin-left: 8% ;
+                                            writing-mode: vertical-rl;
+                                            text-orientation: upright;   
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            letter-spacing: 1px;
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            text-align: center;
+                                            list-style: none;   
+                                            padding-right: 15px; 
+                                            color: #5196a7;   
+                                            padding-left: 4px;                                                 
+                                            border-left: 2px solid #5ac0d974;
+                                            height:fit-content;
+                                        }
+                                        .li_content{
+                                            display: flex;
+                                            flex-direction: column;                                                                
+                                            position: relative;
+                                            justify-self: center;
+                                            justify-items: center;
+                                            justify-content: center;
+                                            align-items: center;
+                                            align-self: center;
+                                            align-content: center;
+                                            gap: 5rem; 
+                                            margin-top: -3rem;
+                                            margin-left: 5%;  
+                                            width: 90%;                                            
+                                            .row_courses{                                
+                                                display: flex;
+                                                flex-direction: row; 
+                                                width: 100%;
+                                                gap: 15px; 
+                                                .column{
+                                                    margin-top: 0.5rem;
+                                                    .labeline{
+                                                        background-color: hsla(0, 0%, 97%, 0.97);
+                                                    }                                       
+                                                }
+                                                .form_control:focus{
+                                                    color: #5ac0d9;   
+                                                    border: 0.1px solid #5ac0d9;
+                                                    outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;                                              
+                                                }
+                                            }
+                                            .row_btn { 
+                                                display: flex; 
+                                                width: 94%;
+                                                flex-direction: row;                                     
+                                                align-self: flex-end;  
+                                                justify-content: flex-end;
+                                                margin-right: 1%;
+                                                .removeInstructor {   
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    align-items: center;
+                                                    gap: 1rem;                                     
+                                                    align-content: flex-end;
+                                                    justify-content: flex-end;
+                                                    .text{
+                                                        display: flex;
+                                                        color: #7b7a7a;
+                                                    }
+                                                    .btn_remove{ 
+                                                        padding: 3px 5px;
+                                                        padding-left: 9px;
+                                                        padding-top: 4px;
+                                                        border-radius: 50%;
+                                                        border: 1px solid rgb(251, 187, 187);
+                                                        background-color: rgb(246, 181, 181);
+                                                        color: rgb(241, 23, 23);
+                                                        opacity: 0.95;
+                                                        &:hover{
+                                                            color: rgb(246, 181, 181);
+                                                            background-color: rgb(241, 23, 23);
+                                                        }
+                                                    }         
+
+                                                }      
+                                            }                                 
+                                        }
+                                                                    
+                                    }                       
+                                }
+                                .numberOfInstructors{
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 90%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    margin-top: -0.5rem;      
+                                    h3 {
+                                        color: #656464;  
+                                        font-size: 21px;
+                                        padding-bottom: 10px;  
+                                        text-align: start; 
+                                        p{       
+                                            margin-left: 1px;
+                                            margin-right: 5px;
+                                            display: inline-flex;
+                                            color: #5196a7;                                
+                                        }
+                                    }  
+                                    .form_control {
+                                        color: rgb(72, 72, 72);
+                                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";                            
+                                        position: relative;
+                                        width: 100%;
+                                        outline: none;
+                                        font-size: 16px; 
+                                        font-weight: 400;
+                                        height: 2.4rem;
+                                        padding: .175rem .45rem;
+                                        line-height: 1.2;
+                                        border-radius: 0.15rem;
+                                        border: 1px solid #ced4da;
+                                        display: block;
+                                        background-clip: border-box;  
+                                        background: transparent;      
+                                        transition: 0.1s ease-in-out; 
+                                        z-index: 1111;       
+                                        box-shadow: 1px 2px 15px 1px rgba(209, 207, 207, 0.808);  
+                                        &:focus{
+                                            color: #5ac0d9;   
+                                            border: 0.1px solid #5ac0d9;
+                                            outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;                                              
+                                        }       
+                                    }                
+                                }
+                            } 
+                            .card_moreInfo{   
+                                .button_container{   
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    margin-top: -0.5rem; 
+                                    margin-bottom: 3.5rem;
+                                }
+                                .submit_button {  
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                    border: 0px solid var(--Marine-blue);
+                                    border-radius: 30px;
+                                    font-size: 1rem;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    display: flex;
+                                    cursor: pointer;
+                                    outline: none;    
+                                    transition: all 0.25s ease;
+                                    width: 270px;
+                                    position: relative;   
+                                    height: 60px; 
+                                    overflow: hidden;
+                                    text-align: center; 
+                                    gap: 9px;    
+                                    &:not(.loading):hover{
+                                        box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                        }         
+                                    } 
+                                    .buttonIcon{ 
+                                        padding: 10px 5px;
+                                        position: absolute;
+                                        left: 0px;
+                                        pointer-events: none;
+                                        z-index: 10;
+                                        background: inherit;
+                                        width: 60px;
+                                        height: 60px;
+                                        display: flex;
+                                        align-items: center; 
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        transition: all 0.25s ease; 
+                                    }  
+                                    .text {
+                                        width: 200px;
+                                        display: block;
+                                        padding: 12px 12px;
+                                        line-height: 1rem;
+                                        position: absolute;
+                                        margin-left: 2.2rem;
+                                        pointer-events: none;
+                                        transition: all 0.25s ease;
+                                    }   
+                                    .loading-animate{
+                                        position: absolute;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        top: 0;
+                                        left: 0px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        pointer-events: none;
+                                        opacity: 1;
+                                        transition: all 0.25s ease;
+                                        z-index: 100;
+                                        &::after{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s ease 0.05s;
+                                            position: absolute; 
+                                            opacity: 0.6;
+                                        }
+                                        &::before{
+                                            content: '';
+                                            width: 58px;
+                                            height: 58px;
+                                            border-radius: 50%;
+                                            border: 3px solid transparent;
+                                            border-left: 3px solid #fff;
+                                            animation: loading infinite 0.8s linear;
+                                            position: absolute;
+                                            opacity: 0.6;
+                                        }
+                                    } 
+                                }    
+                                .submit_button.loading{
+                                    width: 60px; 
+                                    .buttonIcon{
+                                        transform: rotate(-90deg);
+                                        //padding-bottom: 4px;
+                                        //padding-left: 3px;
+                                    }
+                                    .text{
+                                        transform: translate(-140px);
+                                    }
+                                    .loading-animate{
+                                        opacity: 1;
+                                    }
+                                }
+                                .card_body{                                              
+                                    .row_courses{
+                                        align-self: center; 
+                                        width: 170%; 
+                                        margin-left: -2rem;
+                                        margin-bottom: 1rem;
+                                        .column{
+                                            margin-top: 0.5rem;
+                                            .courseActive{
+                                                display: flex;  
+                                                flex-direction: row;
+                                                gap: 1rem;
+                                                align-items: center;
+                                                justify-content: center;
+                                                align-self: center;
+                                                justify-self: center; 
+                                                align-content: center;
+                                                justify-items: center;
+                                                vertical-align: middle;
+                                                position: relative;                                   
+                                                .labeline{ 
+                                                    display: flex;
+                                                    flex: 3;
+                                                    text-align: center;
+                                                    font-size: 17px;
+                                                    font-weight: 600;
+                                                    color: #7b7a7a;  
+                                                }
+                                                .above_checkbox{
+                                                    flex: 1;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    z-index: 1111; 
+                                                    height: 5vw;
+                                                    width: 20vw;
+                                                    background: #fff;
+                                                    display: flex;
+                                                    align-items: center; 
+                                                    justify-content: center;
+                                                }
+                                                .above_checkbox input{                                        
+                                                    height: 31px;
+                                                    width: 67px;
+                                                    position: relative;
+                                                    background: #e6e6e6; 
+                                                    border-radius: 30px;
+                                                    appearance: none;
+                                                    position: absolute;
+                                                    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+                                                    align-self: center;
+                                                    vertical-align: middle;
+                                                    justify-content: center;                    
+                                                    transition: 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);                                                            
+                                                }
+                                                .above_checkbox input::before{
+                                                    height: 100%;
+                                                    width: 30px;
+                                                    left: 0;
+                                                    position: absolute;
+                                                    content: "";
+                                                    background: linear-gradient(#fff, #f2f2f2, #e6e6e6, #d9d9d9);
+                                                    border-radius: 50px;
+                                                    box-shadow: 0 2px 5px rgba(0, 0, 0 , 0.2);
+                                                    transform: scale(0.85);     
+                                                    margin-top: -0.6rem;
+                                                    transition: 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);                                       
+                                                }  
+                                                input:checked{
+                                                    background: #2e9eb0;
+                                                }
+                                                .above_checkbox input:checked::before{
+                                                    left: 35px; 
+                                                    margin-top: -0.8rem;
+                                                }
+                                            }
+                                        }                            
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+        
+        
+        /*
+
+@media (min-width: 576px) {
+    .addCourse_container{
+        .section_body{
+            .container_fluid{
+                .tab_pane{
+                    .card_basicInfo{
+                        .card_body{
+                            .row{
+                                .column{
+                                    flex: 0 0 50%;
+                                    max-width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ */
+    
+
+@media (max-width:850px) {
+  
+    .add_courses_submit_main{ 
+        .add_courses_scroll {
+        display: contents;  
+            .header{ 
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 200px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    align-self: center;
+                    justify-content: center;
+                    background-clip: border-box;
+                    background-size: cover;
+                }
+                .header_area{            
+                    .logo{                    
+                        margin-left: auto;
+                        margin-right: -0.3rem;
+                    }
+                }
+            }
+            .forms_container{
+                width:100%;
+            }
+            .root {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                padding: 20px 20px; 
+                .main_title{  
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";              
+                    font-size: 35px; 
+                    color: #f09f09;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    padding-bottom: 0.8rem;
+                    border-bottom: 1px solid #17a2b8;
+                    margin-bottom: 2rem;
+                    margin: 0 50px;
+                    margin-bottom: 3rem;
+                }  
+                .addCourse_container {
+                    width:  93.5%;   
+                    display: block; 
+                    margin-left: 2.5%;
+                    margin-right: 2.5%;
+                    font-size: 14px;
+                    direction: ltr;
+                    margin-top: 3rem;
+                    position: relative; 
+                    .learn_more{
+                        align-self: end;
+                        justify-content: end;
+                        margin: 0px 50px 50px 0;
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+                        outline: none;
+                        border: none;
+                        vertical-align: middle;
+                        text-decoration: none;
+                        background-color: transparent;
+                        padding: 0;
+                        font-family: sans-serif;
+                        font-size: inherit;
+                        width: 12rem;
+                        height: auto;         
+                        
+                        .circle{
+                            transition: all 0.45s cubic-bezier(0.65, 0, 0.76, 1);
+                            position: relative;
+                            display: flex;
+                            margin: 0;
+                            width: 3.2rem;
+                            height: 3.2rem;           
+                            background-color: rgb(37, 109, 127);
+                            border-radius: 1.625rem;            
+                            z-index: 2;            
+                            .check{
+                                transition: all 0.45s cubic-bezier(0.65, 0, 0, 0.76, 1);
+                                position: relative;  
+                                vertical-align: middle;  
+                                top: 1.7px; 
+                                left: 0.1rem;
+                            
+                                font-size: 3rem;             
+                                color: #fff;
+                                z-index: 2;
+                            }                  
+                        }      
+                        .button_text{
+                            z-index: 1;
+                            transition: all 0.45s cubic-bezier(0.65, 0, 0.76, 1);
+                            position: relative;
+                            top: 0;
+                            left:-2.65rem;
+                            right: 0;
+                            bottom: 0;  
+                            border-top-right-radius: 15px;
+                            border-bottom-right-radius: 15px;
+                            padding: 0.75rem;
+                            padding-left: 2rem;
+                            margin: 0 0 0 1.85rem; 
+                            color: rgb(37, 109, 127);
+                            letter-spacing: 2px;
+                            text-shadow: .5px 0.5px 0.5px whitesmoke;
+                            font-weight: 700;
+                            font-size: 1.1rem;
+                            line-height: 1.6;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }      
+                    }
+                    .learn_more:hover {         
+                        .circle {             
+                            width: 100%;  
+                            box-shadow: 0px 2px 15px 0px rgb(76, 150, 174);   
+                        } 
+                        .button_text {
+                            color:  white; 
+                            text-shadow: none;
+                        }
+                    }
+                    .addCourse_main {
+                        margin: 35px 35px;            
+                        z-index: 8;           
+                        
+                        .menu_fields{ 
+                            width: 90%; 
+                            transform: translateY(-70%); 
+                            opacity: 0;
+                            height: fit-content;  
+                            margin-top: 1.5rem;
+                            font-size: 0.7rem;
+                            background-color: #eae9e9;
+                            color: rgb(7, 92, 113);
+                            font-weight: 600;
+                            border-bottom-left-radius: 25px;
+                            border-bottom-right-radius: 25px;
+                            transition: 0.7s ease-out; 
+                            position: relative;
+                            z-index: 2;
+                            cursor: default;
+                            pointer-events: none;
+
+                            ul{
+                                display: contents;
+                                li {
+                                    padding-bottom: 10px;
+                                    display: flex;
+                                    flex-direction: column;  
+                                    align-items: center;
+                                    justify-content: space-between;                     
+                                    h2{ 
+                                        align-items: center;                    
+                                        width: 35px;
+                                        height: 35px;     
+                                        text-align: center;
+                                        padding: 9px 5.5px;                    
+                                        border-radius: 50%;
+                                        font-size: 15px;
+                                        vertical-align: middle;
+                                        font-weight: 700;
+                                        color: whitesmoke; 
+                                        background-color: #17a2b8;
+                                    }
+                                }
+                            }           
+                        }        
+                        .menu_fields.active{ 
+                            transform: translateY(0%);
+                            transition: 0.7s ease-in;
+                            opacity: 1; 
+                            justify-content: center;
+                            padding-left: -2rem;
+                            cursor: pointer;
+                            pointer-events: all;
+                        }
+                        .tab {
+                            transition: 1s ease-in-out;
+                            margin-top: 4rem;
+                            position: relative;
+                            width: 94%; 
+                            margin-left: auto;
+                            margin-right: auto;
+                            height: 50px;
+                            z-index: 1;
+                            user-select: none;  
+                            .menuToggle{
+                                position: absolute;
+                                top: -50%;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width:fit-content;
+                                height: 130%;
+                                padding: 0rem 1.5rem;                
+                                background: rgb(7, 92, 113);
+                                z-index: 1;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                display: flex;
+                                flex-direction: column;                
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff; 
+                                transition: 1s ease-in-out;
+                                text-align: center;
+                                font-size: 1vw;
+                                font-weight: 600;               
+                                line-height: 1.4vw; 
+                                span{
+                                    position: relative; 
+                                    margin-top: 0.9vw;
+                                }
+                                p{ 
+                                    display: none;
+                                    margin-top: -0.09vw;
+                                    color: #fff;
+                                    background-color: #17a2b8;
+                                    padding: 0.2vw 0.35vw;                    
+                                    border-radius: 50%;
+                                    font-size: 0.8vw;
+                                }
+                                
+                            }
+                            ul.menu{
+                                .specializationCode{
+                                    position: fixed;
+                                    margin-left: -60%;
+
+                                }
+                                position: absolute;
+                                inset: 0; 
+                                background: #def7f8cc;
+                                border-radius: 10px;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 5vw; 
+                                height: 75px;
+                                box-shadow: 0 -5px 25px rgba(0,0,0,0.1);
+                                li{
+                                    list-style: none;
+                                    .mui_icon1,.mui_icon2, .mui_icon3, .mui_icon4{
+                                        font-size: 1.85em;
+                                        color: #aeaeae;
+                                        pointer-events: none;
+                                        .active{
+                                            color: #17a2b8;
+                                        }                        
+                                    }
+                                    .mui_icon1.active, .mui_icon2.active, .mui_icon3.active, .mui_icon4.active {
+                                        color: #17a2b8;
+                                    }
+                                }
+                            }
+                            .menu_studies {                
+                                opacity : 0;
+                                position: absolute;
+                                background-color:rgb(13, 94, 114); 
+                                color: white;  
+                                width: 95%;
+                                margin-left: 2.5%;
+                                height: fit-content;
+                                transform-origin: top center;  
+                                z-index: -1;
+                                transform: translateY();
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                flex-direction: row;
+                                transition: 0.5s ease-in-out;  
+                                border-top-left-radius: 15px;
+                                border-top-right-radius: 15px;
+                                ul{   
+                                     
+                                    flex-direction: column;
+                                    display: inline-flex; 
+                                    align-items: center;
+                                    gap: 1vw; 
+                                    justify-content: center; 
+                                    letter-spacing: 0.4px; 
+                                    li{
+                                        width: 95%;
+                                        text-align: center;
+                                        font-size: 10px;
+                                        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                                    }
+                                    li:hover{
+                                        font-size: 12px;
+                                        font-weight: 700; 
+                                        color: #dddede;
+                                    }
+                                    p{
+                                        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                                        color: #abebf2;
+                                    }                     
+                                }
+                            }            
+                        } 
+                        .tab.active { 
+                            transition: 1s ease-in;
+                            margin-top: 10rem;            
+                            .menuToggle {                
+                                transform: translateX(-50%) translateY(45%) rotate(360deg);
+                            }
+                            .menu_studies {
+                                display: flex;
+                                transform: translateY(-100%); 
+                                transition: 0.5s ease-out;   
+                                opacity: 1;            
+                            }
+                        }    
+                        .beforeMessage {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+                            vertical-align: middle;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 2rem 3%;
+                            padding-bottom: 3rem;
+                            .messageIcon {
+                               display: none;
+                            }
+                            p{            
+                            position: relative; 
+                            text-align: justify;
+                            font-size: 18px;
+                            color: gray;
+                            font-weight: 500; 
+                            }
+                        }  
+                    }
+
+                    .section_body{   
+                        background: #fff; 
+                        transition: margin 1s ease-in-out; 
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        margin-top: -1.5rem !important;        
+                        .container_fluid{
+                            width: 100%;
+                            padding-right: 15px;
+                            padding-left: 15px;
+                            margin-right: auto;
+                            margin-left: auto;   
+                            position: relative; 
+                            background-color: transparent;
+                            .tab_pane {                  
+                                //display: block;                
+                                .card_basicInfo, .card_studyProgramInfo, .card_courseManagementInfo, .card_moreInfo{ 
+                                    transition: all 0.5s ease-in-out;
+                                    border-radius: 0.55rem;
+                                    border-color: #E6E9ED;
+                                    position: relative;
+                                    width: 100%;
+                                    //margin-bottom: 15px;
+                                    display: block;
+                                    //flex-direction: column;
+                                    min-width: 0;
+                                    word-wrap: break-word;
+                                    background-color: #fff;
+                                    background-clip: border-box;
+                                    border: 1px solid rgba(0,0,0,.125);  
+                                    box-shadow: 0 1px 12px 1px rgb(216, 216, 216);
+                                    //padding-bottom: 5%;
+                                    margin-bottom: 3.5rem;     
+                                    .button_container{   
+                                        align-items: center;
+                                        justify-content: center;
+                                        display: flex;
+                                        margin-top: -0.5rem; 
+                                        margin-bottom: 3.5rem;
+                                    }
+                                    .submit_button {  
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                        border: 0px solid var(--Marine-blue);
+                                        border-radius: 30px;
+                                        font-size: 1rem;
+                                        font-weight: bold;
+                                        color: #fff;
+                                        display: flex;
+                                        cursor: pointer;
+                                        outline: none;    
+                                        transition: all 0.25s ease;
+                                        width: 270px;
+                                        position: relative;   
+                                        height: 60px; 
+                                        overflow: hidden;
+                                        text-align: center; 
+                                        gap: 9px;    
+                                        &:not(.loading):hover{
+                                            box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                            .buttonIcon{
+                                                transform: rotate(-90deg);
+                                            }         
+                                        } 
+                                        .buttonIcon{ 
+                                            padding: 10px 5px;
+                                            position: absolute;
+                                            left: 0px;
+                                            pointer-events: none;
+                                            z-index: 10;
+                                            background: inherit;
+                                            width: 60px;
+                                            height: 60px;
+                                            display: flex;
+                                            align-items: center; 
+                                            justify-content: center;
+                                            border-radius: 50%;
+                                            transition: all 0.25s ease; 
+                                        }  
+                                        .text {
+                                            width: 200px;
+                                            display: block;
+                                            padding: 12px 12px;
+                                            line-height: 1rem;
+                                            position: absolute;
+                                            margin-left: 2.2rem;
+                                            pointer-events: none;
+                                            transition: all 0.25s ease;
+                                        }   
+                                        .loading-animate{
+                                            position: absolute;
+                                            width: 60px;
+                                            height: 60px;
+                                            border-radius: 50%;
+                                            top: 0;
+                                            left: 0px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            pointer-events: none;
+                                            opacity: 1;
+                                            transition: all 0.25s ease;
+                                            z-index: 100;
+                                            &::after{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s ease 0.05s;
+                                                position: absolute; 
+                                                opacity: 0.6;
+                                            }
+                                            &::before{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s linear;
+                                                position: absolute;
+                                                opacity: 0.6;
+                                            }
+                                        } 
+                                    }    
+                                    .submit_button.loading{
+                                        width: 60px; 
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                            //padding-bottom: 4px;
+                                            //padding-left: 3px;
+                                        }
+                                        .text{
+                                            transform: translate(-140px);
+                                        }
+                                        .loading-animate{
+                                            opacity: 1;
+                                        }
+                                    }           
+                                    .card_header{                        
+                                        padding: 20px 20px;
+                                        border: 0;
+                                    // padding-bottom: 2rem;
+                                        background: none;
+                                        display: flex;
+                                        flex-direction: row; 
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-bottom: 0;  
+                                        .mui_icon1Form, .mui_icon2Form , .mui_icon3Form , .mui_icon4Form  {
+                                            color: #b0b4b8;
+                                            margin-top: -0.17rem;
+                                            position: relative;
+                                            display: inline-flex;
+                                        }
+                                        .mui_icon1Form.active, .mui_icon2Form.active, .mui_icon3Form.active, .mui_icon4Form.active {
+                                            color: #17a2b8
+                                        }
+                                        .card_title{                            
+                                            margin-left: 1.5%;
+                                            font-size: 1.1rem;
+                                            font-weight: 600;
+                                            letter-spacing: 1.2px;
+                                            line-height: 1.2;
+                                            text-transform: uppercase;
+                                            //margin-bottom: 5px;
+                                            color: #17a2b8; 
+                                            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                                            //font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                        }
+                                        .card_options{
+                                            color: #9aa0ac;
+                                            margin-left: auto;
+                                            display: flex;
+                                            order: 100;
+                                            align-self: center;
+                                            .card_options_collapse, .card_options_remove{
+                                                font-size: 21px;
+                                                margin-top: -0.2rem;
+                                                margin-left: 15px;
+                                                color: #007bff;
+                                                text-decoration: none;
+                                                background-color: transparent;
+                                                cursor: pointer;
+                                                display: flex;
+                                            }
+                                            .lock {
+                                                display: flex;
+                                                cursor: pointer;   
+                                                font-size: 21px;    
+                                                color: #df990f;                         
+                                            }
+                                            .lockOpen {
+                                                display: none;
+                                                cursor: pointer;   
+                                                font-size: 21px;    
+                                            }
+                                            .card_options_collapse_more {
+                                                display: none;
+                                                font-size: 21px;
+                                                margin-top: -0.2rem;
+                                                margin-left: 15px;
+                                                color: #007bff;
+                                                text-decoration: none;
+                                                background-color: transparent;
+                                                cursor: pointer; 
+                                            }
+                                            .card_options_collapse::before {
+                                                content: '\e930';
+                                            }
+                                            .card_options_remove::before{
+                                                content: "\ea00";
+                                            }
+                                        }                        
+                                    }
+                                    .card_header:first-child{
+                                        border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+                                    }
+                                    .card_body{   
+                                        padding-top: 0.5rem;
+                                        width: 96%;                       
+                                        margin: 1rem 2% 2rem 2%;
+                                        //position: relative; 
+                                        transition: 1s ease-in-out;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 4rem;  height: auto; 
+                                        .row_courses{         
+                                            flex-direction: column; 
+                                            display: flex;
+                                            gap: 65px;  
+                                            //margin-left: 0rem;
+                                            //margin-right: auto;
+                                            //width: 94%;       
+                                            justify-content: center;                                                        
+                                            .column{  
+                                                margin-top: 0.5rem;
+                                                position: relative;
+                                                width: 96%;   
+                                                justify-content: justify; 
+                                                .error, .errorValid, .errorThree, .errorSemStudy, .errorSemPer, .errorCatLab, .errorTypCat, .errorDuplicate { 
+                                                    display: none;
+                                                    position: absolute;
+                                                    color: var(--Strawberry-red);
+                                                    padding-top: 2.5rem;
+                                                    padding-left: 0.5rem;
+                                                    font-size: 10px;
+                                                    font-weight: 600;
+                                                }               
+                                                .form_group{   
+                                                    width: 96%;                                     
+                                                    margin-left: 2%;
+                                                    align-items: center;
+                                                    justify-content: center;                                    
+                                                    .form_control{       
+                                                        color: rgb(72, 72, 72);
+                                                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";                            
+                                                        position: absolute;
+                                                        width: 100%;
+                                                        outline: none;
+                                                        font-size: 16px; 
+                                                        font-weight: 400;
+                                                        height: 2.4rem;
+                                                        padding: .175rem .45rem;
+                                                        line-height: 1.2;
+                                                        border-radius: 0.15rem;
+                                                        border: 1px solid #ced4da;
+                                                        display: block;
+                                                        background-clip: border-box;  
+                                                        background: transparent;      
+                                                        transition: 0.1s ease-in-out; 
+                                                        z-index: 1111;                
+                                                    }
+                                                    .form_control:focus{
+                                                        color: #5ac0d9;   
+                                                        border: 0.1px solid #5ac0d9;
+                                                        outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;                                              
+                                                    }
+                                                    select{
+                                                        height: 33px;
+                                                        width: 100%;
+                                                        line-height: 1.2;
+                                                        &:focus{ 
+                                                            color: #5ac0d9;                                           
+                                                            border: 0.1px solid #5ac0d9;
+                                                            outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;  
+                                                        }  
+                                                    } 
+                                                    input:not([value='']) {
+                                                        color: #6b6b6b;                                           
+                                                        border: 0.1px solid #5ac0d9;
+                                                        outline: 2px solid hsla(184, 56%, 68%, 0.369) ;                                           
+                                                    }                                                                                                                                                    
+                                                    .labeline {
+                                                        position: absolute;
+                                                        font-size: 16.5px;
+                                                        color: #b7b5b5;
+                                                        padding: 6.5px 12px; 
+                                                        background-color: #fff;
+                                                        transition: 0.2s ease;   
+                                                    }                                     
+                                                    .form_control:focus + .labeline,
+                                                    input:not([value='']) + .labeline
+                                                    {
+                                                        color: #56b3ca;
+                                                        font-weight: 550;
+                                                        height: 27px;
+                                                        line-height: 27px; 
+                                                        transform: translate(4px , -14px) scale(0.88);
+                                                        //transform: translate(-4px , -14px) scale(0.88);
+                                                        z-index: 2222;
+                                                        padding: 0 5px;
+                                                    } 
+                                                    .checkboxes { 
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        flex-wrap: wrap;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        gap: 10px;
+                                                        label{
+                                                            input[type="checkbox"] {
+                                                                display: none;                                            
+                                                            }                 
+                                                            input[type="checkbox"]:checked ~ span {
+                                                                background: #17a2b8; 
+                                                                color: #eaecee;
+                                                                box-shadow: 0 2px 10px #17a2b8; 
+                                                            }                             
+                                                            span{
+                                                                background: #ddd;
+                                                                color: #2e9eb0;
+                                                                box-shadow: 0 2px 10px #656464;
+                                                                text-shadow: 0 0.2px 0.1px rgba(0,0,0,.5);
+                                                                letter-spacing: 1px; 
+                                                                position: relative;
+                                                                display: inline-block;
+                                                                font-size: 16px;
+                                                                font-weight: 600;
+                                                                padding: .375rem .75rem;
+                                                                line-height: 1.2;
+                                                                border-radius: 30px;
+                                                                transition: 0.5s;
+                                                                user-select: none;
+                                                                overflow: hidden;
+                                                                &::before {
+                                                                    content: '';
+                                                                    position: absolute;
+                                                                    top: 0;
+                                                                    left: 0;
+                                                                    width: 100%;
+                                                                    height: 50%;
+                                                                    background: rgba(255,255,255,0.1);
+                                                                }                                            
+                                                            }          
+                                                        }                
+                                                    }                         
+                                                }
+                                            }                            
+                                        }
+                                    }
+                                }
+                                .card_studyProgramInfo{
+                                    height: fit-content;  
+                                    .button_container{   
+                                        align-items: center;
+                                        justify-content: center;
+                                        display: flex;
+                                        margin-top: -0.5rem; 
+                                        margin-bottom: 3.5rem;
+                                    }
+                                    .submit_button {  
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                        border: 0px solid var(--Marine-blue);
+                                        border-radius: 30px;
+                                        font-size: 1rem;
+                                        font-weight: bold;
+                                        color: #fff;
+                                        display: flex;
+                                        cursor: pointer;
+                                        outline: none;    
+                                        transition: all 0.25s ease;
+                                        width: 270px;
+                                        position: relative;   
+                                        height: 60px; 
+                                        overflow: hidden;
+                                        text-align: center; 
+                                        gap: 9px;    
+                                        &:not(.loading):hover{
+                                            box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                            .buttonIcon{
+                                                transform: rotate(-90deg);
+                                            }         
+                                        } 
+                                        .buttonIcon{ 
+                                            padding: 10px 5px;
+                                            position: absolute;
+                                            left: 0px;
+                                            pointer-events: none;
+                                            z-index: 10;
+                                            background: inherit;
+                                            width: 60px;
+                                            height: 60px;
+                                            display: flex;
+                                            align-items: center; 
+                                            justify-content: center;
+                                            border-radius: 50%;
+                                            transition: all 0.25s ease; 
+                                        }  
+                                        .text {
+                                            width: 200px;
+                                            display: block;
+                                            padding: 12px 12px;
+                                            line-height: 1rem;
+                                            position: absolute;
+                                            margin-left: 2.2rem;
+                                            pointer-events: none;
+                                            transition: all 0.25s ease;
+                                        }   
+                                        .loading-animate{
+                                            position: absolute;
+                                            width: 60px;
+                                            height: 60px;
+                                            border-radius: 50%;
+                                            top: 0;
+                                            left: 0px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            pointer-events: none;
+                                            opacity: 1;
+                                            transition: all 0.25s ease;
+                                            z-index: 100;
+                                            &::after{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s ease 0.05s;
+                                                position: absolute; 
+                                                opacity: 0.6;
+                                            }
+                                            &::before{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s linear;
+                                                position: absolute;
+                                                opacity: 0.6;
+                                            }
+                                        } 
+                                    }    
+                                    .submit_button.loading{
+                                        width: 60px; 
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                            //padding-bottom: 4px;
+                                            //padding-left: 3px;
+                                        }
+                                        .text{
+                                            transform: translate(-140px);
+                                        }
+                                        .loading-animate{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    .more {
+                                        width: 95%;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin-left: 2.5%;
+                                        .more_message {
+                                            padding-bottom: 10px;
+                                            color: #7b7a7a;
+                                            letter-spacing: 0.5px;
+                                            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";   
+                                            span{ 
+                                                font-weight: 600;
+                                                font-size: 18px;
+                                                color: #5ac0d9
+                                            }                         
+                                        }
+                                        .form_control2 {
+                                            color:  #7b7a7a;;
+                                            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";                            
+                                            position: relative;
+                                            width: 99.5%; 
+                                            margin-bottom: -2.5rem;
+                                            font-size: 16px; 
+                                            font-weight: 400;  
+                                            border-radius: 0.3rem;
+                                            border: 1px solid #ced4da;
+                                            display: block;
+                                            background-clip: border-box;  
+                                            background: transparent;      
+                                            transition: 0.1s ease-in-out; 
+                                            z-index: 1111;                                         
+                                            border: 0.1px solid #5ac0d9;
+                                            outline: 2px solid hsla(184, 56%, 68%, 0.369) ;                                           
+                                            &:hover{
+                                                color: #5ac0d9;   
+                                                border: 0.1px solid #5ac0d9;
+                                                outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;  
+                                            }  
+                                            &::placeholder{
+                                                color: #b7b5b5;
+                                            }
+                                        }              
+                                    }
+                                }
+                                .card_courseManagementInfo{
+                                    .button_container{   
+                                        align-items: center;
+                                        justify-content: center;
+                                        display: flex;
+                                        margin-top: -0.5rem; 
+                                        margin-bottom: 3.5rem;
+                                    }
+                                    .submit_button {  
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                        border: 0px solid var(--Marine-blue);
+                                        border-radius: 30px;
+                                        font-size: 1rem;
+                                        font-weight: bold;
+                                        color: #fff;
+                                        display: flex;
+                                        cursor: pointer;
+                                        outline: none;    
+                                        transition: all 0.25s ease;
+                                        width: 270px;
+                                        position: relative;   
+                                        height: 60px; 
+                                        overflow: hidden;
+                                        text-align: center; 
+                                        gap: 9px;    
+                                        &:not(.loading):hover{
+                                            box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                            .buttonIcon{
+                                                transform: rotate(-90deg);
+                                            }         
+                                        } 
+                                        .buttonIcon{ 
+                                            padding: 10px 5px;
+                                            position: absolute;
+                                            left: 0px;
+                                            pointer-events: none;
+                                            z-index: 10;
+                                            background: inherit;
+                                            width: 60px;
+                                            height: 60px;
+                                            display: flex;
+                                            align-items: center; 
+                                            justify-content: center;
+                                            border-radius: 50%;
+                                            transition: all 0.25s ease; 
+                                        }  
+                                        .text {
+                                            width: 200px;
+                                            display: block;
+                                            padding: 12px 12px;
+                                            line-height: 1rem;
+                                            position: absolute;
+                                            margin-left: 2.2rem;
+                                            pointer-events: none;
+                                            transition: all 0.25s ease;
+                                        }   
+                                        .loading-animate{
+                                            position: absolute;
+                                            width: 60px;
+                                            height: 60px;
+                                            border-radius: 50%;
+                                            top: 0;
+                                            left: 0px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            pointer-events: none;
+                                            opacity: 1;
+                                            transition: all 0.25s ease;
+                                            z-index: 100;
+                                            &::after{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s ease 0.05s;
+                                                position: absolute; 
+                                                opacity: 0.6;
+                                            }
+                                            &::before{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s linear;
+                                                position: absolute;
+                                                opacity: 0.6;
+                                            }
+                                        } 
+                                    }    
+                                    .submit_button.loading{
+                                        width: 60px; 
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                            //padding-bottom: 4px;
+                                            //padding-left: 3px;
+                                        }
+                                        .text{
+                                            transform: translate(-140px);
+                                        }
+                                        .loading-animate{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    .course_manager_form{
+                                        z-index: 10;
+                                        border-radius: 6px; 
+                                        box-shadow: 0px 1px 15px 1px #2e9fb02d ;
+                                        background-color: #dddddd2f; 
+                                        align-items: center;
+                                        align-self: center;
+                                        width: 94%;
+                                        padding: 50px 25px;
+                                        height: fit-content;
+                                        li{
+                                            list-style: none;
+                                            display: flex;
+                                            flex-direction: row;
+                                            .title{ 
+                                                text-align: start; 
+                                                writing-mode: vertical-rl;
+                                                text-orientation: upright; 
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                letter-spacing: 1px;
+                                                font-size: 20px;
+                                                font-weight: 600;
+                                                text-align: center;
+                                                list-style: none;   
+                                                padding-right: 15px; 
+                                                color: #656464;                                                    
+                                                border-right: 2px solid #5ac0d974;
+                                            }
+                                            .title_instructor{                                                                 
+                                                text-align: center;
+                                                justify-self: center; 
+                                                vertical-align: middle; 
+                                                padding-top: 1.5rem;
+                                                margin-left: 8% ;
+                                                writing-mode: vertical-rl;
+                                                text-orientation: upright;   
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                letter-spacing: 1px;
+                                                font-size: 20px;
+                                                font-weight: 600;
+                                                text-align: center;
+                                                list-style: none;   
+                                                padding-right: 15px; 
+                                                color: #5196a7;   
+                                                padding-left: 4px;                                                 
+                                                border-left: 2px solid #5ac0d974;
+                                                height:fit-content;
+                                            }
+                                            .li_content{
+                                                display: flex;
+                                                flex-direction: column;                                                                
+                                                position: relative;
+                                                justify-self: center;
+                                                justify-items: center;
+                                                justify-content: center;
+                                                align-items: center;
+                                                align-self: center;
+                                                align-content: center;
+                                                gap: 5rem; 
+                                                margin-top: -3rem;
+                                                margin-left: 5%;  
+                                                width: 90%;                                            
+                                                .row_courses{    
+                                                    width: 100%;                            
+                                                    display: flex;
+                                                    flex-direction: column; 
+                                                    gap:70px;
+                                                    .column{
+                                                        margin-top: 0.5rem;
+                                                        .labeline{
+                                                            background-color: hsla(0, 0%, 97%, 0.97);
+                                                            font-size: 13px;
+                                                        }                                       
+                                                    }
+                                                    .form_control:focus{
+                                                        color: #5ac0d9;   
+                                                        border: 0.1px solid #5ac0d9;
+                                                        outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;                                              
+                                                    }
+                                                }
+                                                .row_btn { 
+                                                    display: flex; 
+                                                    width: 94%;
+                                                    flex-direction: row;                                     
+                                                    align-self: flex-end;  
+                                                    justify-content: flex-end;
+                                                    margin-right: 1%;
+                                                    .removeInstructor {   
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        align-items: center;
+                                                        gap: 1rem;                                     
+                                                        align-content: flex-end;
+                                                        justify-content: flex-end;
+                                                        .text{
+                                                            display: flex;
+                                                            color: #7b7a7a;
+                                                        }
+                                                        .btn_remove{ 
+                                                            padding: 3px 5px;
+                                                            padding-left: 9px;
+                                                            padding-top: 4px;
+                                                            border-radius: 50%;
+                                                            border: 1px solid rgb(251, 187, 187);
+                                                            background-color: rgb(246, 181, 181);
+                                                            color: rgb(241, 23, 23);
+                                                            opacity: 0.95;
+                                                            &:hover{
+                                                                color: rgb(246, 181, 181);
+                                                                background-color: rgb(241, 23, 23);
+                                                            }
+                                                        }         
+
+                                                    }      
+                                                }                                 
+                                            }
+                                                                        
+                                        }                       
+                                    }
+                                    .numberOfInstructors{
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 90%;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        margin-top: -0.5rem;      
+                                        h3 {
+                                            color: #656464;  
+                                            font-size: 21px;
+                                            padding-bottom: 10px;  
+                                            text-align: start; 
+                                            p{       
+                                                margin-left: 1px;
+                                                margin-right: 5px;
+                                                display: inline-flex;
+                                                color: #5196a7;                                
+                                            }
+                                        }  
+                                        .form_control {
+                                            color: rgb(72, 72, 72);
+                                            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";                            
+                                            position: relative;
+                                            width: 100%;
+                                            outline: none;
+                                            font-size: 16px; 
+                                            font-weight: 400;
+                                            height: 2.4rem;
+                                            padding: .175rem .45rem;
+                                            line-height: 1.2;
+                                            border-radius: 0.15rem;
+                                            border: 1px solid #ced4da;
+                                            display: block;
+                                            background-clip: border-box;  
+                                            background: transparent;      
+                                            transition: 0.1s ease-in-out; 
+                                            z-index: 1111;       
+                                            box-shadow: 1px 2px 15px 1px rgba(209, 207, 207, 0.808);  
+                                            &:focus{
+                                                color: #5ac0d9;   
+                                                border: 0.1px solid #5ac0d9;
+                                                outline: 3.2px solid hsla(184, 56%, 68%, 0.369) ;                                              
+                                            }       
+                                        }                
+                                    }
+                                } 
+                                .card_moreInfo{   
+                                    .button_container{   
+                                        align-items: center;
+                                        justify-content: center;
+                                        display: flex;
+                                        margin-top: -0.5rem; 
+                                        margin-bottom: 3.5rem;
+                                    }
+                                    .submit_button {  
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-image: linear-gradient(to right, rgb(181, 60, 181) 0% , rgb(28, 166, 162) 100%);
+                                        border: 0px solid var(--Marine-blue);
+                                        border-radius: 30px;
+                                        font-size: 1rem;
+                                        font-weight: bold;
+                                        color: #fff;
+                                        display: flex;
+                                        cursor: pointer;
+                                        outline: none;    
+                                        transition: all 0.25s ease;
+                                        width: 270px;
+                                        position: relative;   
+                                        height: 60px; 
+                                        overflow: hidden;
+                                        text-align: center; 
+                                        gap: 9px;    
+                                        &:not(.loading):hover{
+                                            box-shadow: 0px 2px 15px 0px rgb(22, 109, 147);   
+                                            .buttonIcon{
+                                                transform: rotate(-90deg);
+                                            }         
+                                        } 
+                                        .buttonIcon{ 
+                                            padding: 10px 5px;
+                                            position: absolute;
+                                            left: 0px;
+                                            pointer-events: none;
+                                            z-index: 10;
+                                            background: inherit;
+                                            width: 60px;
+                                            height: 60px;
+                                            display: flex;
+                                            align-items: center; 
+                                            justify-content: center;
+                                            border-radius: 50%;
+                                            transition: all 0.25s ease; 
+                                        }  
+                                        .text {
+                                            width: 200px;
+                                            display: block;
+                                            padding: 12px 12px;
+                                            line-height: 1rem;
+                                            position: absolute;
+                                            margin-left: 2.2rem;
+                                            pointer-events: none;
+                                            transition: all 0.25s ease;
+                                        }   
+                                        .loading-animate{
+                                            position: absolute;
+                                            width: 60px;
+                                            height: 60px;
+                                            border-radius: 50%;
+                                            top: 0;
+                                            left: 0px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            pointer-events: none;
+                                            opacity: 1;
+                                            transition: all 0.25s ease;
+                                            z-index: 100;
+                                            &::after{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s ease 0.05s;
+                                                position: absolute; 
+                                                opacity: 0.6;
+                                            }
+                                            &::before{
+                                                content: '';
+                                                width: 58px;
+                                                height: 58px;
+                                                border-radius: 50%;
+                                                border: 3px solid transparent;
+                                                border-left: 3px solid #fff;
+                                                animation: loading infinite 0.8s linear;
+                                                position: absolute;
+                                                opacity: 0.6;
+                                            }
+                                        } 
+                                    }    
+                                    .submit_button.loading{
+                                        width: 60px; 
+                                        .buttonIcon{
+                                            transform: rotate(-90deg);
+                                            //padding-bottom: 4px;
+                                            //padding-left: 3px;
+                                        }
+                                        .text{
+                                            transform: translate(-140px);
+                                        }
+                                        .loading-animate{
+                                            opacity: 1;
+                                        }
+                                    }
+                                    .card_body{                                              
+                                        .row{
+                                            align-self: center; 
+                                            width: 170%; 
+                                            margin-left: -2rem;
+                                            margin-bottom: 1rem;
+                                            .column{
+                                                .courseActive{
+                                                    display: flex;  
+                                                    flex-direction: row;
+                                                    gap: 1rem;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    align-self: center;
+                                                    justify-self: center; 
+                                                    align-content: center;
+                                                    justify-items: center;
+                                                    vertical-align: middle;
+                                                    position: relative;                                   
+                                                    .labeline{ 
+                                                        display: flex;
+                                                        flex: 3;
+                                                        text-align: center;
+                                                        font-size: 17px;
+                                                        font-weight: 600;
+                                                        color: #7b7a7a;  
+                                                    }
+                                                    .above_checkbox{
+                                                        flex: 1;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        z-index: 1111; 
+                                                        height: 5vw;
+                                                        width: 20vw;
+                                                        background: #fff;
+                                                        display: flex;
+                                                        align-items: center; 
+                                                        justify-content: center;
+                                                    }
+                                                    .above_checkbox input{                                        
+                                                        height: 31px;
+                                                        width: 67px;
+                                                        position: relative;
+                                                        background: #e6e6e6; 
+                                                        border-radius: 30px;
+                                                        appearance: none;
+                                                        position: absolute;
+                                                        box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+                                                        align-self: center;
+                                                        vertical-align: middle;
+                                                        justify-content: center;                    
+                                                        transition: 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);                                                            
+                                                    }
+                                                    .above_checkbox input::before{
+                                                        height: 100%;
+                                                        width: 30px;
+                                                        left: 0;
+                                                        position: absolute;
+                                                        content: "";
+                                                        background: linear-gradient(#fff, #f2f2f2, #e6e6e6, #d9d9d9);
+                                                        border-radius: 50px;
+                                                        box-shadow: 0 2px 5px rgba(0, 0, 0 , 0.2);
+                                                        transform: scale(0.85);     
+                                                        margin-top: -0.6rem;
+                                                        transition: 0.4s cubic-bezier(0.68, -0.55,0.265, 1.55);                                       
+                                                    }  
+                                                    input:checked{
+                                                        background: #2e9eb0;
+                                                    }
+                                                    .above_checkbox input:checked::before{
+                                                        left: 35px; 
+                                                        margin-top: -0.8rem;
+                                                    }
+                                                }
+                                            }                            
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 250px;
+    }
+    
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);    
+    }
+    
+}
+ 

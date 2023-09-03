@@ -1,0 +1,392 @@
+.student_courses_main{
+    width: 94.7%;
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    font-size: 14px;
+    direction: ltr;
+    margin-top: 3rem;
+    position: relative;  
+    .scroll { 
+        min-width: 360px;  
+        display: contents;
+        overflow: hidden;
+        .header{
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 100%;
+                height: 200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                align-self: center;
+                justify-content: center;
+                background-clip: border-box;
+                background-size: cover;
+            }
+
+            .title {
+                width: 100%;
+                display: flex;
+                text-align: center;
+                margin-top: 2rem;
+                align-self: center;
+                justify-content: center;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 22px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                color: #6a6a6a;
+                display: block;
+                padding: 13px 0 13px;
+                background-color: #17a3b814;
+
+                p {
+                    color: #17a2b8;
+                    text-shadow: 0.5px 0.4px 0.7px white;
+                    margin-top: 0.5rem;
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                }
+            }            
+            .header_area_professor_courses{  
+                display: flex;
+                flex-direction: row;
+                width: 102%;
+                margin-top: 1.5rem;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                border-bottom: 1px solid #d6d5d5;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+                justify-content: right;
+                margin-left: auto;
+                margin-right: -1.7rem;
+                .logo{            
+                    display: inline-flex;
+                    margin-bottom: -1.3rem;
+                    img {
+                        flex: 1;
+                        justify-self: right;
+                        margin-right: 0;
+                        margin-left: auto;
+                        width: 310px;
+                        height: 115px;
+                    }
+                }
+            }
+        }
+        .forms_container{
+            display: block;
+            margin-top: 2rem;
+
+            .text {
+                color: #606060;
+                letter-spacing: 0.5px;
+                line-height: 1.5em;
+                text-align: justify;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        }        
+        .student_courses_container{
+            display: flex;
+            flex: 1 1 auto;
+            max-width: 100%;
+            .declaration_object{
+                display: flex;
+                flex: 1 1 auto;
+                flex-direction: column;
+                width: 100%;
+                .page_title{
+                    margin-top: 2rem;
+                    padding: 20px;
+                    background: rgba(238, 244, 244, 0.636);
+                    margin-bottom: 36px;
+                    border-radius: 10px;
+                    box-shadow: rgba(37, 79, 89, 0.1) 2px 12px 14px -3px, rgba(34, 71, 84, 0.05) 0px 5px 12px -4px;
+                    .professor_courses_box{
+                        display: flex; 
+                        flex-wrap: nowrap;                        
+                        -webkit-box-pack: justify;
+                        justify-content: space-between;
+                        .first_box {
+                            display: flex;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            .avatar_title{
+                                position: relative;
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                flex-shrink: 0;
+                                font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+                                line-height: 1;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                user-select: none;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width: 72px;
+                                height: 72px;
+                                color: #17a2b8;
+                                margin-right: 25px;
+                                background: rgba(255, 255, 255, 0.5);
+                                box-shadow: rgba(34, 51, 84, 0.4) 0px 2px 4px -3px, rgba(34, 51, 84, 0.2) 0px 5px 16px -4px;
+                                .courses_icon {
+                                    user-select: none;
+                                    width: 1em;
+                                    height: 1em;
+                                    display: inline-block;
+                                    fill: currentcolor;
+                                    flex-shrink: 0;
+                                    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                    font-size: 2.7rem;
+                                }
+                            }
+                            .box_container{
+                                display: block;
+                                .typography_title{
+                                    margin: 0px 0px 4px;
+                                    font-weight: 700;
+                                    font-size: 27px;
+                                    line-height: 1.4; 
+                                    color: #ffae18;
+                                    text-shadow: 1px 1px 3px rgb(234, 234, 234);
+                                    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+                                }
+                                .typography_content {
+                                    display: flex;
+                                    flex-direction: row;
+                                    vertical-align: middle;
+                                    align-items: center;
+                                    margin: 0px;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    letter-spacing: 0.5px;
+                                    color: #969696;
+                                    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+                                    line-height: 1.57;
+                                }
+                            }
+                        }
+                        .paper { 
+                            margin-left: 1rem;
+                            background-color: rgb(255, 255, 255);
+                            color: rgb(34, 77, 84);
+                            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                            border-radius: 10px;
+                            padding: 0px;
+                            box-shadow: rgba(159, 162, 191, 0.18) 0px 9px 16px, rgba(159, 162, 191, 0.32) 0px 2px 2px;
+                            overflow: hidden;
+                            .paper_container{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                .first_paper{
+                                    padding: 17px 12px;
+                                    text-align: center;
+                                    display: block;
+                                }
+                                .divider{
+                                    height: auto;
+                                    margin: 0px;
+                                    flex-shrink: 0;
+                                    align-self: stretch;
+                                    border: 0px;
+                                    height: auto;
+                                    width: 1px; 
+                                    border: 0.5px solid rgba(34, 51, 84, 0.255);
+                                }
+                                .second_paper{
+                                    padding: 17px 12px;
+                                    text-align: center;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main_content{
+                    width: 100%;
+                    .inGridElement{ 
+                        .item{
+                            background-color: rgb(255, 255, 255);
+                            color: rgb(34, 51, 84);
+                            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                            border-radius: 10px;
+                            border: 1px solid rgba(0, 0, 0, 0.12);
+                            box-shadow: rgba(159, 162, 191, 0.18) 0px 9px 16px, rgba(159, 162, 191, 0.32) 0px 2px 2px;
+                            overflow: hidden;
+                            padding: 20px; 
+                            padding-right: 0px;
+                            .item_first{
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                -webkit-box-pack: justify;
+                                gap: 15px;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                .item_content_1 {
+                                    display: flex;
+                                    flex: 5;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    .item_avatar{
+                                        position: relative;
+                                        display: flex;
+                                        -webkit-box-align: center;
+                                        align-items: center;
+                                        -webkit-box-pack: center;
+                                        justify-content: center;
+                                        flex-shrink: 0;
+                                        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+                                        line-height: 1;
+                                        border-radius: 50%;
+                                        overflow: hidden;
+                                        user-select: none;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        background-color: #048a83;
+                                        color: rgb(255, 255, 255);
+                                        width: 50px;
+                                        height: 50px;
+                                        box-shadow: rgba(34, 51, 84, 0.1) 0px 0.113rem 0.5rem, rgba(34, 51, 84, 0.3) 0px 0.126rem 0.225rem;
+                                    }
+                                }
+                                .item_content_2 {
+                                    display: flex;                                    
+                                    flex: 0.1;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    margin-left: 10px;  
+                                    margin-top: 0rem;
+                                    margin-bottom: auto;
+                                    .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+                                        background-color: #1cb817c3;
+                                    }
+                                    .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked { 
+                                        color: #1cb817;
+                                    }
+                                    .css-ahj2mt-MuiTypography-root {
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            .item_second{
+                                display: flex;
+                                gap: 10px;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                padding-top: 10px;
+                                padding-bottom: -5px;
+                                padding-right: 20px;
+                                .icon_button{
+                                    display: inline-flex;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    -webkit-box-pack: center;
+                                    justify-content: center;
+                                    position: relative;
+                                    box-sizing: border-box;
+                                    -webkit-tap-highlight-color: transparent;
+                                    background-color: transparent;
+                                    outline: 0px;
+                                    border: 0px;
+                                    margin: 0px;
+                                    cursor: pointer;
+                                    user-select: none;
+                                    vertical-align: middle;
+                                    appearance: none;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    flex: 0 0 auto;
+                                    font-size: 1.5rem;
+                                    overflow: visible;
+                                    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                    color: #ffae18; 
+                                    border-radius: 8px;
+                                    padding: 8px; 
+                                    transition: font-size all 0.3s ease;
+                                    &:hover{
+                                        font-size: 1.7rem;
+                                        background-color: #ffae181f;
+                                        border-radius: 50%; 
+                                        box-shadow: 1px 2px 10px #60606046;
+                                    }
+                                }
+                            }
+                            .item_third{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                margin-top: 22.5px;
+                                margin-right: 20px;
+                                gap: 15px;
+                                flex-wrap: wrap;
+                                text-align: center;
+                                .inStyle{
+                                    box-sizing: inherit;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media (max-width:1000px) {
+    .student_courses_main{
+        .scroll{
+            .student_courses_container{
+                .declaration_object{
+                    .page_title{
+                        .professor_courses_box{
+                            .paper{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .student_courses_main{
+        .scroll{
+            .student_courses_container{
+                .declaration_object{
+                    .main_content{
+                        .inGridElement{
+                            .item{
+                                .item_first{
+                                    .item_content_1{
+                                        padding-right: 10px;
+                                        margin-left: -10px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap : 15px;
+                                        text-overflow: ellipsis; 
+                                    }
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "env": { 
+        "MONGO_USER":"diplomathesis",
+        "MONGO_PASSWORD":"diplomathesis",
+        "MONGO_DATABASE":"DiplomaThesis",
+        "NODE_END": "development",
+        "JWT_SECRET":"uTH_ELECTRICAL_COMPUTER_ENGINE"
+    }
+}
