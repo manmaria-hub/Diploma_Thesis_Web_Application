@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ 
+:root {
+    --Marine-blue: hsl(197, 96%, 18%);
+    --Purplish-blue: hsl(243,100%, 62%);
+    --Pastel-blue: hsl(228,100%, 84%);
+    --Light-blue: hsl(206,94%, 87%);
+    --Strawberry-red: hsl(354,84%, 57%);
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(193, 47%, 96%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);    
+    --Light-blue: hsl(205, 67%, 93%);
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';   
+    padding: 0;
+    margin: 0; 
+}
+
+.complete_container{  
+    display: flex;
+    flex-direction: column;
+    gap: 5rem; 
+    .card_success{
+        margin-top:5rem;
+        display: flex;
+        flex-direction: column;
+        background: url('ece21.jpg') center;
+        background-repeat: no-repeat;
+        background-size: cover;   
+        width: 55vw;
+        height: 26vw;
+        border-radius: 7px;  
+        box-shadow: 1px 1px 15px 2px black ;
+        .successIcon{ 
+            font-size: 165px;
+            margin-top: -87px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(36, 161, 36);
+            color: white;
+            padding: 2px 2px;
+            border-radius: 50%;
+        }
+        .text {
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 0rem 1.4rem;
+            text-align: center; 
+            font-size: 2vw;
+            font-weight: 600;
+            color: white;
+            text-shadow: 1px 1px 0.2px black; 
+        }
+    }    
+    .input_data {
+        text-align: justify;
+        padding: 0px 70px;
+        color: rgb(120, 119, 119);
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen  and (max-width:900px) {
+    .complete_container{
+        .card_success{
+            width: 20rem;
+            height: 17rem;
+            .successIcon {
+                font-size: 95px;
+                margin-top: -51px;
+            }
+            .text{
+                font-size: 18px;
+            }
+        }
+    }        
+}

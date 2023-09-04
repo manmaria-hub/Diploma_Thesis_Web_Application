@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  
+
+.admin_page { 
+    &:after {               
+        content: '';
+        position: fixed;
+        inset: 0; 
+        //background: linear-gradient(to bottom right, rgb(243, 247, 248), #63bac7, #17a2b8);
+        z-index: -1;
+    }
+
+    .admin_page_container{ 
+        display: flex; 
+        flex-direction: row;
+      //  align-items: center;  
+        .left-wrapper{   
+            width: 330px;   
+            border-right: 1px solid #E6E9ED;
+            transition: all 0.5s ease;  
+            z-index: 555;
+            box-shadow: 1px 2px 15px rgb(210, 209, 209);  
+        }
+        .left-wrapper.close {   
+            width: 77px;    
+        }
+        .right-wrapper{ 
+            width: 100%;  
+            transition: all 0.5s ease; 
+        }
+        .right-wrapper.open{  
+            width: 100%; 
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .admin_page{
+    .admin_page_container{
+        display: flex;/*
+        .left-wrapper{
+            transition: all .15s ease-in;
+            background-color: aqua;        
+        }
+        .right-wrapper{
+            flex: 1;
+        }*/
+    }
+}
+}

@@ -1,0 +1,81 @@
+{
+    "validation" : 
+    {
+        "StudentOK": {
+            "code":"S-0K",
+            "message": "Η καταχώρηση του φοιτητή ολοκληρώθηκε με επιτυχία!"
+        },
+        "StudentError": {
+            "code":"S-N0K",
+            "message": "Η καταχώρηση του φοιτητή απέτυχε!"
+        }, 
+        "MultipleStudentsOK" : {
+            "code":"SM-0K",
+            "message": "Η καταχώρηση των φοιτητών ολοκληρώθηκε με επιτυχία!"
+        },
+        "SpecializationFields_OK": {
+            "code" : "SF-OK",
+            "message" : "Η καταχώρηση των Γνωστικών Αντικειμένων ολοκληρώθηκε με επιτυχία!"
+        }, 
+        "SpecializationFields_QueryOK": {
+            "code" : "SF-QueryOK",
+            "message" : "Το SpecializationFields QUERY ολοκληρώθηκε με επιτυχία!"
+        }, 
+        "SpecializationFields_error": {
+            "code" : "SF-NOK",
+            "message" : "Η καταχώρηση των Γνωστικών Αντικειμένων απέτυχε!"
+        },
+        "SpecializationFields_QueryError": {
+            "code" : "SF-QueryNOK",
+            "message" : "Το SpecializationFields QUERY απέτυχε!"
+        },
+        "Course_MutationOK": {
+            "code" : "C-MutationOK",
+            "message" : "Το Courses MUTATION ολοκληρώθηκε με επιτυχία!"
+        }, 
+        "Course_QueryOK": {
+            "code" : "C-QueryOK",
+            "message" : "Το Courses QUERY ολοκληρώθηκε με επιτυχία!"
+        }, 
+        "Course_QueryError": {
+            "code" : "C-QueryNOK",
+            "message" : "Το Courses QUERY απέτυχε!"
+        },
+        "Course_MutationError": {
+            "code" : "C-MutationNOK",
+            "message" : "Το Courses MUTATION απέτυχε!"
+        },
+        "Program_QueryOK": {
+            "code" : "P-QueryOK",
+            "message" : "Το Program QUERY ολοκληρώθηκε με επιτυχία!"
+        }, 
+        "Program_QueryError": {
+            "code" : "P-QueryNOK",
+            "message" : "Το Program QUERY απέτυχε!"
+        },
+        "Program_MutationOK" : {
+            "code" : "P-MutationOK",
+            "message" : "Το Program MUTATION ολοκληρώθηκε με επιτυχία!"
+        },
+        "Program_MutationError": {
+            "code" : "P-MutationNOK",
+            "message" : "Το Program MUTATION απέτυχε!"
+        },
+        "Calendar_QueryOK": {
+            "code" : "P-QueryOK",
+            "message" : "Το Program QUERY ολοκληρώθηκε με επιτυχία!"
+        }, 
+        "Calendar_QueryError": {
+            "code" : "P-QueryNOK",
+            "message" : "Το Program QUERY απέτυχε!"
+        },
+        "Calendar_MutationOK" : {
+            "code" : "P-MutationOK",
+            "message" : "Το Program MUTATION ολοκληρώθηκε με επιτυχία!"
+        },
+        "Calendar_MutationError": {
+            "code" : "P-MutationNOK",
+            "message" : "Το Program MUTATION απέτυχε!"
+        }             
+    }    
+}

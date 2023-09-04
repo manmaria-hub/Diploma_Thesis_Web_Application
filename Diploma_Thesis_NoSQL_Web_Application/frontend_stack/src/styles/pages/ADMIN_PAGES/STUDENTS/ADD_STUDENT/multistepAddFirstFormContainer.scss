@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ 
+:root {
+    --Marine-blue: hsl(197, 96%, 18%);
+    --Purplish-blue: hsl(243,100%, 62%);
+    --Pastel-blue: hsl(228,100%, 84%);
+    --Light-blue: hsl(206,94%, 87%);
+    --Strawberry-red: hsl(354,84%, 57%);
+    --s: hsl(128, 85%, 56%);
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(193, 47%, 96%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';   
+    padding: 0;
+    margin: 0; 
+}
+
+.add_form_component{  
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0rem;
+    margin: 30px 35px; 
+    padding: 1rem 1rem; 
+    background: linear-gradient(to top right, rgb(181, 60, 181),  rgb(28, 166, 162));    
+    .add_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  ;
+        margin-bottom: -1.25rem; 
+        align-items: center;
+        justify-content: center; 
+        .box1, .box2, .box3{ 
+            position: relative;
+            width: 30%;
+            padding: 30px;  
+            border-radius: 4px 4px 0 0;
+            margin: 20px; 
+            box-sizing: border-box;
+            overflow: hidden; 
+            .icon{
+                width: 80px;
+                height: 80px;                     
+                color: var(--Magnolia);
+                padding: 7px;
+                background: var(--Magnolia);
+                color: var(--Marine-blue);
+                border-radius:50% ;
+                display: flex;
+                justify-content: center;
+                align-items: center;                
+                position: relative;
+                margin: 0 auto; 
+                font-size: 40px;
+                font-weight: 700;
+                transition: 0s; 
+                margin-bottom: 1rem;
+            }
+            .content{
+                position: relative;
+                z-index: 1;
+                transition: 0s;
+                align-items: center;
+                justify-content: center;
+                text-align: center;  
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0rem;            
+                color: var(--Magnolia);    
+                letter-spacing: 1px;
+                .notComplete, .doneComplete, .toProcess {
+                    display: none;     
+                }
+                hr{
+                    display: block;
+                    height: 1px;
+                    border: 0;
+                    border-top: 1px solid #ccc;
+                    margin-top: 1em;
+                    padding: 0; 
+                    width: 100%;
+                }
+            }
+        }    
+        .box1.active, .box2.active, .box3.active {             
+            .icon{
+                box-shadow: 0 0 0 400px var(--Magnolia);  
+                background-color: var(--Marine-blue);
+                color: var(--Magnolia);
+
+                width: 80px;
+                height: 80px;        
+                padding: 7px;  
+                border-radius:50% ;
+                display: flex;
+                justify-content: center;
+                align-items: center;                
+                position: relative;
+                margin: 0 auto; 
+                font-size: 40px;
+                font-weight: 700;
+                transition: 1s; 
+                margin-bottom: 1rem;
+            }
+            .content {
+                position: relative;
+                z-index: 1;
+                transition: 0.5s;
+                align-items: center;
+                justify-content: center;
+                text-align: center;  
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0rem;       
+                letter-spacing: 1px;
+                color: var(--Marine-blue);
+            }
+        }
+    }
+    .form1{
+        display: flex;  
+        padding: 0rem 1.25rem;
+    } 
+}
