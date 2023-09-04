@@ -1,0 +1,150 @@
+[{
+  "Hall_category": "Αίθουσες Διδασκαλίας",
+  "Hall_type": "Αμφιθέατρο",
+  "Hall_floor": "0",
+  "Hall_code": "106",
+  "Hall_label": "Αμφιθέατρο 1",
+  "Hall_capacity": "262",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{  
+  "Hall_category": "Αίθουσες Διδασκαλίας",
+  "Hall_type": "Αμφιθέατρο",
+  "Hall_floor": "0",
+  "Hall_code": "103",
+  "Hall_label": "Αμφιθέατρο 2",
+  "Hall_capacity": "129",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Αίθουσες Διδασκαλίας",
+  "Hall_type": "Αμφιθέατρο",
+  "Hall_floor": "0",
+  "Hall_code": "105",
+  "Hall_label": "Αμφιθέατρο 3",
+  "Hall_capacity": "129",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Αίθουσες Διδασκαλίας",
+  "Hall_type": "Αίθουσα Διδασκαλίας",
+  "Hall_floor": "0",
+  "Hall_code": "111",
+  "Hall_label": "",
+  "Hall_capacity": "80",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Αίθουσες Διδασκαλίας",
+  "Hall_type": "Αίθουσα Διδασκαλίας",
+  "Hall_floor": "0",
+  "Hall_code": "108",
+  "Hall_label": "",
+  "Hall_capacity": "30",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Εργαστήρια",
+  "Hall_type": "Εργαστήριο Ηλεκτρονικής",
+  "Hall_floor": "2",
+  "Hall_code": "308",
+  "Hall_label": "",
+  "Hall_capacity": "30",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Εργαστήρια",
+  "Hall_type": "Εργαστήριο Ενέργειας",
+  "Hall_floor": "2",
+  "Hall_code": "305",
+  "Hall_label": "",
+  "Hall_capacity": "44",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Εργαστήρια",
+  "Hall_type": "Εργαστήριο Η/Υ",
+  "Hall_floor": "1",
+  "Hall_code": "205",
+  "Hall_label": "",
+  "Hall_capacity": "34",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Εργαστήρια",
+  "Hall_type": "Εργαστήριο Η/Υ",
+  "Hall_floor": "1",
+  "Hall_code": "206",
+  "Hall_label": "",
+  "Hall_capacity": "21",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Γραφεία",
+  "Hall_type": "Αίθουσα Συνεδριάσεων",
+  "Hall_floor": "3",
+  "Hall_code": "406",
+  "Hall_label": "",
+  "Hall_capacity": "80",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Γραφεία",
+  "Hall_type": "Γραφείο Καθηγητή",
+  "Hall_floor": "3",
+  "Hall_code": "415",
+  "Hall_label": "",
+  "Hall_capacity": "",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Γραφεία",
+  "Hall_type": "Γραφείο Καθηγητή",
+  "Hall_floor": "3",
+  "Hall_code": "419",
+  "Hall_label": "",
+  "Hall_capacity": "",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{
+  "Hall_category": "Γραφεία",
+  "Hall_type": "Γραφείο Καθηγητή",
+  "Hall_floor": "2",
+  "Hall_code": "325",
+  "Hall_label": "",
+  "Hall_capacity": "",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{ 
+  "Hall_category": "Γραφεία",
+  "Hall_type": "Γραφείο Καθηγητή",
+  "Hall_floor": "2",
+  "Hall_code": "327",
+  "Hall_label": "",
+  "Hall_capacity": "",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+},
+{ 
+  "Hall_category": "Γραφεία",
+  "Hall_type": "Γραφείο Καθηγητή",
+  "Hall_floor": "3",
+  "Hall_code": "418",
+  "Hall_label": "",
+  "Hall_capacity": "",
+  "Hall_owner_owner_name":  "",
+  "Hall_owner_owner_name": "" 
+}]

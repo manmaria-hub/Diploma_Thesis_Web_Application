@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "apollo-server": "^3.12.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.5",
+    "sequelize": "^6.32.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "name": "backend_stack",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
