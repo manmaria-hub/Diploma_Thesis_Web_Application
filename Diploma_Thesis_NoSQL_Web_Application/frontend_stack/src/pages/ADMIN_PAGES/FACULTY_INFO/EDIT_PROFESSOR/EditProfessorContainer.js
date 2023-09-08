@@ -492,6 +492,7 @@ const checkFourthStep = () => {
 									<Form.Group as={Col} controlId="formGridPassword">
 									<Form.Label>Κατάσταση</Form.Label> 
 									<Form.Check // prettier-ignore
+								        checked={professorInfo.PERSONAL_INFO.active}
 								        readOnly
 										type="switch"  
 										id="custom-switch"
@@ -746,7 +747,7 @@ const checkFourthStep = () => {
 							</Tooltip>
 						}
 					><Form.Label>Τηλέφωνο Γραφείου<div style={{marginLeft:'3px', display:'inline-flex', color:'red'}}>*</div></Form.Label></OverlayTrigger>	
-					<Form.Control isInvalid = {firstFormButton.button2 === true && (professorInfo?.ACADEMIC_INFO?.office_telephone === '' || professorInfo?.ACADEMIC_INFO?.office_telephone === undefined || !validator.isNumeric(professorInfo?.ACADEMIC_INFO?.office_telephone) || (professorInfo?.ACADEMIC_INFO?.office_telephone !== undefined && professorInfo?.ACADEMIC_INFO?.office_telephone !== '' )) ? true : false} 
+					<Form.Control isInvalid = {firstFormButton.button2 === true && (professorInfo?.ACADEMIC_INFO?.office_telephone === '' || professorInfo?.ACADEMIC_INFO?.office_telephone === undefined || !validator.isNumeric(professorInfo?.ACADEMIC_INFO?.office_telephone) || (professorInfo?.ACADEMIC_INFO?.office_telephone !== undefined && professorInfo?.ACADEMIC_INFO?.office_telephone !== '' && professorInfo?.ACADEMIC_INFO?.office_telephone.length !== 10 )) ? true : false} 
 					type="text" placeholder="Τηλέφωνο Γραφείου"  value={professorInfo.ACADEMIC_INFO.office_telephone}
 					onChange={(e)=>{setProfessorInfo({...professorInfo, ACADEMIC_INFO:{...professorInfo.ACADEMIC_INFO,office_telephone:validator.trim(e.target.value)}});
 									}}/> 					
