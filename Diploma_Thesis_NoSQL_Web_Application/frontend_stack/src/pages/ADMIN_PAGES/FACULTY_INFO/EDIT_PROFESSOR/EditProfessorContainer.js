@@ -730,7 +730,7 @@ const checkFourthStep = () => {
 
 					<Form.Group as={Col} id='officeHours'>
 					<Form.Label>Ώρες Γραφείου</Form.Label>
-					<Form.Control as="textarea" placeholder="Ώρες Γραφείου" style={{fontFamily:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji'}}  value={professorInfo.PERSONAL_INFO.office_hours}
+					<Form.Control as="textarea" placeholder="Ώρες Γραφείου" style={{fontFamily:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji'}}  value={professorInfo.ACADEMIC_INFO.office_hours}
 					onChange={(e)=>setProfessorInfo({...professorInfo, ACADEMIC_INFO:{...professorInfo.ACADEMIC_INFO,office_hours:e.target.value}})}/> 
 					</Form.Group>
 				</Row>
