@@ -1182,7 +1182,7 @@ const CreateProgramContainer = () => {
                                     </div>
                                     {studyLevelProgram === 'ΠΡΟΠΤΥΧΙΑΚΟ' ?
                                         <div className="text">Μαθήματα <p>ΠΠΣ</p> ανά έτος</div> :
-                                        <div className="text">Μαθήματα <p>ΠΜΣ</p> ανά έτος</div> }
+                                        <div className="text">Μαθήματα <p>ΠΜΣ</p> ανά πρόγραμμα</div> }
                                     <div className="courses">
                                         {studyLevelProgram === 'ΠΡΟΠΤΥΧΙΑΚΟ' ?
                                         <ul>
