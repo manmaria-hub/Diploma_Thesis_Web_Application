@@ -63,10 +63,10 @@ const AddCourseContainer = (props) => {
     let currMonth = currentDate.getMonth() + 1;
     let currAcademicYear = '';
     if (currMonth >= 9) {
-        currAcademicYear = currYear+'-'+currYear+1;
+        currAcademicYear = currYear+'-'+ Number(currYear+1);
     }
     else {
-        currAcademicYear = currYear-1+'-'+currYear;
+        currAcademicYear = Number(currYear-1) +'-'+currYear;
     }
 
     // Determine the state array that will store all the courses names and codes of the previous semesters than the current that can be prerequisites
@@ -1900,7 +1900,7 @@ const AddCourseContainer = (props) => {
                                                             </div>                                            
                                                     </div> 
                                                 </div>
-                                                <div className="row_courses" style={{width:'80%'}}>
+                                                <div className="row_courses" style={{width:'100%'}}>
                                                     {/*COURSE ACTIVE*/}
                                                     <div className="column"  id='CourseActive'>
                                                             <div className="courseActive">
