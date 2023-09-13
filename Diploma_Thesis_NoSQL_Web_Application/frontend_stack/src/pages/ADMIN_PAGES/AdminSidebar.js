@@ -149,15 +149,7 @@ const AdminSidebar = (props) => {
     // Take from the local storage the userIdentity and the user info
     const userInfo_username = JSON.parse(localStorage?.getItem('user'))?.username;
     const userIdentity = localStorage?.getItem('userIdentity'); 
-    // Function that navigates the user to the suitable page 
-    const navigateToSuitablePage = (codePage) => {
-        if (codePage === 'my_courses') {   
-            if (JSON.parse(userIdentity)?.identity === 'ΚΑΘΗΓΗΤΗΣ') {
-                navigate('/uth-ece/studies/my_courses/'+ userInfo_username);
-            }
-        }
-    }
-
+   
     // Get the token from local storage
     const token = localStorage.getItem('token'); 
       
@@ -280,7 +272,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('courses_search').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         my-Μαθήματα
                                                         <div className="active_bullet"  style={{display: props.document === 'my_courses' ? 'inline-flex' : 'none'}}></div>
                                                     </li>
@@ -320,7 +312,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('courses_search').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         my-Μαθήματα
                                                         <div className="active_bullet" style={{display : props.document === 'my_courses' ? 'inline-flex' : 'null'}}></div>
                                                     </li>
@@ -389,7 +381,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('hourPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examUndergraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         Ωρολόγιο ΠΠΣ {academicSemester}
                                                         <div className="active_bullet"></div>
                                                     </li>
@@ -406,7 +398,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('hourPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examUndergraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         Ωρολόγιο Ισοτιμίας {academicSemester}
                                                         <div className="active_bullet"></div>
                                                     </li>
@@ -591,7 +583,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('my_courses').getElementsByClassName('active_bullet')[0].style.display='inline-flex';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         Εισαγωγή Μαθήματος
                                                         <div className="active_bullet" style={{display: props.document === 'add_course' ? 'inline-flex' : 'none'}}></div>
                                                     </li>
@@ -739,7 +731,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('courses_search').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         my-Μαθήματα
                                                         <div className="active_bullet"  style={{display: props.document === 'my_courses' ? 'inline-flex' : 'none'}}></div>
                                                     </li>
@@ -779,7 +771,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('courses_search').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         my-Μαθήματα
                                                         <div className="active_bullet" style={{display : props.document === 'my_courses' ? 'inline-flex' : 'null'}}></div>
                                                     </li>
@@ -848,7 +840,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('hourPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examUndergraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         Ωρολόγιο ΠΠΣ {academicSemester}
                                                         <div className="active_bullet"></div>
                                                     </li>
@@ -865,7 +857,7 @@ const AdminSidebar = (props) => {
                                                                     document.getElementById('hourPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examUndergraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('examPostgraduateProgram').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         Ωρολόγιο Ισοτιμίας {academicSemester}
                                                         <div className="active_bullet"></div>
                                                     </li>
@@ -1047,7 +1039,7 @@ const AdminSidebar = (props) => {
                                                         onClick={()=>{document.getElementById('my_courses').getElementsByClassName('active_bullet')[0].style.display='inline-flex';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none';
-                                                                    navigateToSuitablePage('my_courses')}}>
+                                                                    }}>
                                                         my-Μαθήματα
                                                         <div className="active_bullet"></div>
                                                     </li>
