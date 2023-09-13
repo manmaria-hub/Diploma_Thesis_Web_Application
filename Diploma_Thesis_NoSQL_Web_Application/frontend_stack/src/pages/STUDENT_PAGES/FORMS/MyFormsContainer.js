@@ -791,7 +791,7 @@ const MyFormsContainer = (props) => {
                 :
                 <Accordion>
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header><FaFileSignature className='icon_accordion'/><div className='text_header'>my-Αιτήσεις {gradLevel}</div></Accordion.Header>
+                        <Accordion.Header><FaFileSignature className='icon_accordion'/><div className='text_header'>my-Αιτήσεις</div></Accordion.Header>
                         <Accordion.Body style={{display:'flex', justifyContent:'center'}}> 
                         {numApplicationForms > 0 ? 
                             <Table responsive>
