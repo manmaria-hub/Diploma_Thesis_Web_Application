@@ -317,7 +317,8 @@ const AdminSidebar = (props) => {
                                                         <div className="active_bullet" style={{display : props.document === 'my_courses' ? 'inline-flex' : 'null'}}></div>
                                                     </li>
                                                     <li id='courses_search' style={{lineHeight:'17px', marginBottom:'0.7rem', marginTop:'0.2rem',  marginLeft:'-0.7px'}}  
-                                                        onClick={()=>{document.getElementById('my_courses').getElementsByClassName('active_bullet')[0].style.display='none';
+                                                        onClick={()=>{navigate('/uth-ece/search_courses');
+								    document.getElementById('my_courses').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('courses_search').getElementsByClassName('active_bullet')[0].style.display='inline-flex';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none'}}>
@@ -776,7 +777,8 @@ const AdminSidebar = (props) => {
                                                         <div className="active_bullet" style={{display : props.document === 'my_courses' ? 'inline-flex' : 'null'}}></div>
                                                     </li>
                                                     <li id='courses_search' style={{lineHeight:'17px', marginBottom:'0.7rem', marginTop:'0.2rem',  marginLeft:'-0.7px'}}  
-                                                        onClick={()=>{document.getElementById('my_courses').getElementsByClassName('active_bullet')[0].style.display='none';
+                                                        onClick={()=>{navigate('/uth-ece/search_courses');
+								    document.getElementById('my_courses').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('courses_search').getElementsByClassName('active_bullet')[0].style.display='inline-flex';
                                                                     document.getElementById('courses_list').getElementsByClassName('active_bullet')[0].style.display='none';
                                                                     document.getElementById('course_profile').getElementsByClassName('active_bullet')[0].style.display='none'}}>
